@@ -21,6 +21,9 @@ header, nav { background:#D2042D; }
   font-family: cursive;
 }
 
+
+
+
 /*-------------------------------------*\
   #NAVBAR
 \*-------------------------------------*/
@@ -39,7 +42,11 @@ header, nav { background:#D2042D; }
 
 nav { margin-right: 200px; }
 
-.navbar-nav { display: flex; }
+.navbar-nav { 
+  margin-right: -144px;
+  display: flex;
+
+ }
 
 .navbar-nav li:not(:last-child) { margin-right: 60px; }
 
@@ -145,7 +152,8 @@ video{
  .logo {
 
 width: auto;   
-height: 110px;;
+height: 110px;
+overflow: hidden;
 border: 3px solid white;
 background-color: rgb(235, 165, 172);
 border-radius: 15px;
@@ -198,6 +206,9 @@ float: left;
 li a{
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
+/* pagination*/
+
  .pagination{
 
    display:flex;
@@ -430,4 +441,7 @@ a {
   --fw-6: 600;
   --fw-5: 500;
   --px: 140px; /* padding-left & padding-right */
+
+
+
 }

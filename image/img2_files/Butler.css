@@ -1,0 +1,32 @@
+@font-face {
+	font-family: 'Butler';
+	src:
+		url('./butler.woff2') format('woff2'),
+		url('./butler.woff') format('woff'),
+		url('./butler.ttf') format('truetype');
+	font-weight: normal;
+	font-display: fallback;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Butler';
+	src:
+		url('./butler-medium.woff2') format('woff2'),
+		url('./butler-medium.woff') format('woff'),
+		url('./butler-medium.ttf') format('truetype');
+	font-weight: 500;
+	font-display: fallback;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Butler';
+	src:
+		url('./butler-bold.woff2') format('woff2'),
+		url('./butler-bold.woff') format('woff'),
+		url('./butler-bold.ttf') format('truetype');
+	font-weight: bold;
+	font-display: fallback;
+	font-style: normal;
+}

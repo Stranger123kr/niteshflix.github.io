@@ -1,0 +1,229 @@
+/**
+ * Font smoothing mixin for webkit and mozilla, note the values differ
+ * between browsers and moz only supports "grayscale"
+ * @param {'antialiased'|'subpixel-antialiased'|'none'} $smoothing
+ */
+/* retina image mixin ====================================================================== */
+/**
+ * High resolution single background image
+ *
+ * Looks for a folder '/@2x' in the same directory with an image that is
+ * roughly 2x the resolution, with the same name.
+ *
+ * Example: @include at2x('styles/icons/', 'facebook')
+ * In the 'styles/icons/' dir will have a 'facebook.png' image and a
+ * '/@2x/' directory with another image 'facebook.png' at 2x the res
+ *
+ * @param {string} $path Path to image, not including image
+ * @param {string} $image Image name, not including extension
+ * @param {string} [$extension = '.png'] Image extension
+ * @return Two versions of image, @2x and regular
+ */
+.messenger-anchored-trigger-icon, .messenger-anchored-trigger {
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-color: transparent;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.messenger-anchored-trigger-icon.long_blue-small, .long_blue-small.messenger-anchored-trigger {
+  background-image: url("/app/marketing/img/messenger/long_blue_small.png");
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .messenger-anchored-trigger-icon.long_blue-small, .long_blue-small.messenger-anchored-trigger {
+    background-image: url("/app/marketing/img/messenger/@2x/long_blue_small.png");
+    background-size: 111px 32px;
+  }
+}
+
+.messenger-anchored-trigger-icon.long_white-small, .long_white-small.messenger-anchored-trigger {
+  background-image: url("/app/marketing/img/messenger/long_white_small.png");
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .messenger-anchored-trigger-icon.long_white-small, .long_white-small.messenger-anchored-trigger {
+    background-image: url("/app/marketing/img/messenger/@2x/long_white_small.png");
+    background-size: 111px 32px;
+  }
+}
+
+.messenger-anchored-trigger-icon.round_blue-small, .round_blue-small.messenger-anchored-trigger {
+  background-image: url("/app/marketing/img/messenger/round_blue_small.png");
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .messenger-anchored-trigger-icon.round_blue-small, .round_blue-small.messenger-anchored-trigger {
+    background-image: url("/app/marketing/img/messenger/@2x/round_blue_small.png");
+    background-size: 40px 40px;
+  }
+}
+
+.messenger-anchored-trigger-icon.round_white-small, .round_white-small.messenger-anchored-trigger {
+  background-image: url("/app/marketing/img/messenger/round_white_small.png");
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .messenger-anchored-trigger-icon.round_white-small, .round_white-small.messenger-anchored-trigger {
+    background-image: url("/app/marketing/img/messenger/@2x/round_white_small.png");
+    background-size: 40px 40px;
+  }
+}
+
+.messenger-anchored-trigger-icon.long_blue-medium, .long_blue-medium.messenger-anchored-trigger {
+  background-image: url("/app/marketing/img/messenger/long_blue_medium.png");
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .messenger-anchored-trigger-icon.long_blue-medium, .long_blue-medium.messenger-anchored-trigger {
+    background-image: url("/app/marketing/img/messenger/@2x/long_blue_medium.png");
+    background-size: 134px 48px;
+  }
+}
+
+.messenger-anchored-trigger-icon.long_white-medium, .long_white-medium.messenger-anchored-trigger {
+  background-image: url("/app/marketing/img/messenger/long_white_medium.png");
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .messenger-anchored-trigger-icon.long_white-medium, .long_white-medium.messenger-anchored-trigger {
+    background-image: url("/app/marketing/img/messenger/@2x/long_white_medium.png");
+    background-size: 134px 48px;
+  }
+}
+
+.messenger-anchored-trigger-icon.round_blue-medium, .round_blue-medium.messenger-anchored-trigger {
+  background-image: url("/app/marketing/img/messenger/round_blue_medium.png");
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .messenger-anchored-trigger-icon.round_blue-medium, .round_blue-medium.messenger-anchored-trigger {
+    background-image: url("/app/marketing/img/messenger/@2x/round_blue_medium.png");
+    background-size: 48px 48px;
+  }
+}
+
+.messenger-anchored-trigger-icon.round_white-medium, .round_white-medium.messenger-anchored-trigger {
+  background-image: url("/app/marketing/img/messenger/round_white_medium.png");
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .messenger-anchored-trigger-icon.round_white-medium, .round_white-medium.messenger-anchored-trigger {
+    background-image: url("/app/marketing/img/messenger/@2x/round_white_medium.png");
+    background-size: 48px 48px;
+  }
+}
+
+.messenger-anchored-trigger-icon.long_blue-large, .long_blue-large.messenger-anchored-trigger {
+  background-image: url("/app/marketing/img/messenger/long_blue_large.png");
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .messenger-anchored-trigger-icon.long_blue-large, .long_blue-large.messenger-anchored-trigger {
+    background-image: url("/app/marketing/img/messenger/@2x/long_blue_large.png");
+    background-size: 169px 56px;
+  }
+}
+
+.messenger-anchored-trigger-icon.long_white-large, .long_white-large.messenger-anchored-trigger {
+  background-image: url("/app/marketing/img/messenger/long_white_large.png");
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .messenger-anchored-trigger-icon.long_white-large, .long_white-large.messenger-anchored-trigger {
+    background-image: url("/app/marketing/img/messenger/@2x/long_white_large.png");
+    background-size: 169px 56px;
+  }
+}
+
+.messenger-anchored-trigger-icon.round_blue-large, .round_blue-large.messenger-anchored-trigger {
+  background-image: url("/app/marketing/img/messenger/round_blue_large.png");
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .messenger-anchored-trigger-icon.round_blue-large, .round_blue-large.messenger-anchored-trigger {
+    background-image: url("/app/marketing/img/messenger/@2x/round_blue_large.png");
+    background-size: 64px 64px;
+  }
+}
+
+.messenger-anchored-trigger-icon.round_white-large, .round_white-large.messenger-anchored-trigger {
+  background-image: url("/app/marketing/img/messenger/round_white_large.png");
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .messenger-anchored-trigger-icon.round_white-large, .round_white-large.messenger-anchored-trigger {
+    background-image: url("/app/marketing/img/messenger/@2x/round_white_large.png");
+    background-size: 64px 64px;
+  }
+}
+
+.messenger-anchored-trigger-icon.long_blue-large, .long_blue-large.messenger-anchored-trigger, .messenger-anchored-trigger-icon.long_white-large, .long_white-large.messenger-anchored-trigger {
+  width: 169px;
+  height: 56px;
+}
+
+.messenger-anchored-trigger-icon.long_blue-medium, .long_blue-medium.messenger-anchored-trigger, .messenger-anchored-trigger-icon.long_white-medium, .long_white-medium.messenger-anchored-trigger {
+  width: 134px;
+  height: 48px;
+}
+
+.messenger-anchored-trigger-icon.long_blue-small, .long_blue-small.messenger-anchored-trigger, .messenger-anchored-trigger-icon.long_white-small, .long_white-small.messenger-anchored-trigger {
+  width: 111px;
+  height: 32px;
+}
+
+.messenger-anchored-trigger-icon.round_blue-large, .round_blue-large.messenger-anchored-trigger, .messenger-anchored-trigger-icon.round_white-large, .round_white-large.messenger-anchored-trigger {
+  width: 64px;
+  height: 64px;
+}
+
+.messenger-anchored-trigger-icon.round_blue-medium, .round_blue-medium.messenger-anchored-trigger, .messenger-anchored-trigger-icon.round_white-medium, .round_white-medium.messenger-anchored-trigger {
+  width: 48px;
+  height: 48px;
+}
+
+.messenger-anchored-trigger-icon.round_blue-small, .round_blue-small.messenger-anchored-trigger, .messenger-anchored-trigger-icon.round_white-small, .round_white-small.messenger-anchored-trigger {
+  width: 40px;
+  height: 40px;
+}
+
+.messenger-anchored-trigger {
+  position: fixed;
+  color: white;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 50px;
+  line-height: 40px;
+  text-indent: -999px;
+  z-index: 9999;
+}
+
+.messenger-anchored-trigger .trigger-text {
+  display: none;
+}
+
+.messenger-anchored-trigger.style-tab {
+  background: black;
+  box-shadow: none;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  padding: 0 20px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  text-indent: 0;
+}
+
+.messenger-anchored-trigger.style-tab .trigger-text {
+  display: inline-block;
+}
+
+.messenger-anchored-trigger.align-left {
+  left: 20px;
+  right: auto;
+}
