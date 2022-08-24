@@ -1,0 +1,40 @@
+@media screen and (max-width:700px) {
+
+    nav ul {
+        margin: 10px 0px 0px 0px;
+
+
+    }
+
+}
+
+@media screen and (max-width:521px) {
+
+    .logo img {
+        margin: 5px 0px;
+        padding: 0px 160px;
+    }
+
+
+}
+
+
+@media screen and (max-width:1270px) {
+
+    .slider {
+        transition: all 0.5s;
+        margin: auto;
+        margin: 10px 200px 0px 0px;
+    }
+    
+
+}
+
+@media screen and (max-width:870px) {
+    .searchbar input {
+        margin: 20px 0px 10px 50px;
+        width: 80vw;
+        height: 5vh
+    }
+
+}

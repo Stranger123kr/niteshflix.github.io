@@ -1,0 +1,220 @@
+/*<--------> Global Variable Declaration Start <-------> */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo 2', bold;
+}
+
+:root {
+    --main-bg-color: #2874f0;
+}
+
+/*<--------> Global Variable Declaration End <-------> */
+
+
+
+
+
+
+
+/*<--------> Logo In Navbar End <-------> */
+
+.logo {
+    display: flex;
+    align-items: center;
+
+}
+
+.logo img {
+    width: 88px;
+    padding: 0px 12px;
+}
+
+
+/*<--------> Logo In Navbar End <-------> */
+
+
+
+
+
+
+/*<--------> Searchbar Start <-------> */
+
+
+.searchbar {
+    display: flex;
+    align-items: center;
+}
+
+.searchbar input {
+    width: 40vw;
+    height: 5vh
+}
+
+.searchbar input:focus {
+    transition: all 0.8s;
+    width: 50vw;
+}
+
+
+.icon{
+    font-size: 20px;
+    margin: 6px 90px 0px -30px;
+}
+
+
+
+
+
+
+/*<--------> Searchbar End <-------> */
+
+
+
+
+
+
+/*<---------> Navbar Section Start <----------> */
+
+
+header {
+    display: flex;
+    background-color: var(--main-bg-color);
+    flex-wrap: wrap;
+
+
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0px 30px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    transition: all 400ms;
+    color: black;
+    background-color: white;
+    padding: 5px 15px 5px 15px;
+    border-radius: 8px;
+}
+
+/*<---------> Navbar Section End <----------> */
+
+
+
+
+/*<---------> Main Section Start <----------> */
+.container {
+    min-height: calc(100vh - 58px - 12vh);
+}
+
+.slider{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin: 12px 120px;
+}
+
+
+.card {
+    border: 1px solid rgb(145, 229, 229);
+    margin: 0px 15px 0px 15px;
+    padding: 30px 0px 50px 0px;
+}
+
+.card-item {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-item img {
+    padding: 0px 65px 0px 65px;
+    
+}
+.card-item img:hover{
+    transition: all 0.5s;
+    transform: scale(1.1);
+    
+}
+
+.list {
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+/*<---------> Main Section End <----------> */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: var(--main-bg-color);
+    color: white;
+    height: 12vh;
+    font-family: 'Baloo 2', cursive;
+
+}
