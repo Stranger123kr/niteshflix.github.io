@@ -5,198 +5,476 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/utility.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/Responsive.css">
-    <link rel="shortcut icon" href="https://cdn2.iconfinder.com/data/icons/social-icons-color/512/flipkart-256.png"
-        type="image/x-icon">
-    <title>Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books &amp; More. Best Offers!
-    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="MediaQuery.css">
+    <title>Document</title>
+
 </head>
 
 <body>
 
-
     <header>
-        <nav>
-            <div class="logo">
-                <img src="img/flipkart.png" alt="">
-            </div>
-            <ul>
-                <li><a href="https://www.google.co.in/">Home</a></li>
-                <li><a href="https://www.google.co.in/">About</a></li>
-                <li><a href="https://www.google.co.in/">Contact</a></li>
-            </ul>
 
-            <div class="searchbar">
-                <input type="text">
-                <div class="icon">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-            </div>
-        </nav>
+        <div class="hlogo">
+            <img src="img/logo.PNG" alt="">
+        </div>
+
+
+        <div class="search">
+            <input type="text" placeholder="Search">
+        </div>
+
+
+        <div class="logo">
+            <img src="img/home.PNG" alt="">
+            <img src="img/send.PNG" alt="">
+            <img src="img/add.PNG" alt="">
+            <img src="img/explore.PNG" alt="">
+            <img src="img/like.PNG" alt="">
+            <img class="profile" src="img/profile_img.jpg" alt="">
+        </div>
+
     </header>
 
 
-    <main class="container">
-        <div class="slider">
-            <img src="https://source.unsplash.com/1150x400/?E-Commerce">
-        </div>
-
-
-        <div class="card">
-            <h1>Sports, Healthcare & more</h1>
-            <br>
-            <hr>
-            <br>
-            <br>
-
-            <div class="card-item">
-                <div class="list">
-                    <img src="https://source.unsplash.com/150x150/?Home & Kitchen Essentials" alt="">
-                    <h2> Clocks</h2>
-                    <p>Upto 80% Off</p>
-                    <p>Big Discounts</p>
-
+    <section>
+        <div class="container">
+            <div class="horizontal-scroll">
+                <button class="btn-scroll" id="btn-sroll-left" onclick="scrollHorizontally(1)">&#x3c;</button>
+                <button class="btn-scroll" id="btn-sroll-right" onclick="scrollHorizontally(-1)">&#x3e;</button>
+                <div class="storys-container">
+                    <div class="story-circle">
+                        <img src="img/friend.jpg" alt="">
+                    </div>
+                    <div class="story-circle">
+                        <img src="img/cover 2.png" alt="">
+                    </div>
+                    <div class="story-circle">
+                        <img src="img/cover 3.png" alt="">
+                    </div>
+                    <div class="story-circle">
+                        <img src="img/cover 4.png" alt="">
+                    </div>
+                    <div class="story-circle">
+                        <img src="img/cover 5.png" alt="">
+                    </div>
+                    <div class="story-circle">
+                        <img src="img/cover 6.png" alt="">
+                    </div>
+                    <div class="story-circle">
+                        <img src="img/cover 7.png" alt="">
+                    </div>
+                    <div class="story-circle">
+                        <img src="img/cover 8.png" alt="">
+                    </div>
+                    <div class="story-circle">
+                        <img src="img/cover 9.png" alt="">
+                    </div>
+                    <div class="story-circle">
+                        <img src="img/cover 10.png" alt="">
+                    </div>
                 </div>
-                <div class="list">
-
-                    <img src="https://source.unsplash.com/150x150/?Grooming, Books, Auto " alt="">
-                    <h2>Coffee</h2>
-                    <p>Upto 80% Off</p>
-                    <p>Big Discounts</p>
-
-
-                </div>
-                <div class="list">
-
-                    <img src="https://source.unsplash.com/150x150/?Fashion Top Deals" alt="">
-                    <h2>Shoes</h2>
-                    <p>Upto 80% Off</p>
-                    <p>Big Discounts</p>
-
-
-                </div>
-                <div class="list">
-
-                    <img src="https://source.unsplash.com/150x150/?Beauty, Food, Toys" alt="">
-                    <h2>Pens</h2>
-                    <p>Upto 80% Off</p>
-                    <p>Big Discounts</p>
-
-
-                </div>
-
-
-            </div>
-        </div>
-        <br>
-        <br>
-        <div class="card">
-            <h1>Home & Kitchen Essentials</h1>
-            <br>
-            <hr>
-            <br>
-            <br>
-
-            <div class="card-item">
-                <div class="list">
-                    <img src="https://source.unsplash.com/150x150/?Home & Kitchen Essentials" alt="">
-                    <h2> Clocks</h2>
-                    <p>Upto 80% Off</p>
-                    <p>Big Discounts</p>
-
-                </div>
-                <div class="list">
-
-                    <img src="https://source.unsplash.com/150x150/?Grooming, Books, Auto " alt="">
-                    <h2>Coffee</h2>
-                    <p>Upto 80% Off</p>
-                    <p>Big Discounts</p>
-
-
-                </div>
-                <div class="list">
-
-                    <img src="https://source.unsplash.com/150x150/?Fashion Top Deals" alt="">
-                    <h2>Shoes</h2>
-                    <p>Upto 80% Off</p>
-                    <p>Big Discounts</p>
-
-
-                </div>
-                <div class="list">
-
-                    <img src="https://source.unsplash.com/150x150/?Beauty, Food, Toys" alt="">
-                    <h2>Pens</h2>
-                    <p>Upto 80% Off</p>
-                    <p>Big Discounts</p>
-
-
-                </div>
-
-
-            </div>
-        </div>
-        <br>
-        <br>
-        <div class="card">
-            <h1>Sports, Healthcare & more</h1>
-            <br>
-            <hr>
-            <br>
-            <br>
-
-            <div class="card-item">
-                <div class="list">
-                    <img src="https://source.unsplash.com/150x150/?Home & Kitchen Essentials" alt="">
-                    <h2> Clocks</h2>
-                    <p>Upto 80% Off</p>
-                    <p>Big Discounts</p>
-
-                </div>
-                <div class="list">
-
-                    <img src="https://source.unsplash.com/150x150/?Grooming, Books, Auto " alt="">
-                    <h2>Coffee</h2>
-                    <p>Upto 80% Off</p>
-                    <p>Big Discounts</p>
-
-
-                </div>
-                <div class="list">
-
-                    <img src="https://source.unsplash.com/150x150/?Fashion Top Deals" alt="">
-                    <h2>Shoes</h2>
-                    <p>Upto 80% Off</p>
-                    <p>Big Discounts</p>
-
-
-                </div>
-                <div class="list">
-
-                    <img src="https://source.unsplash.com/150x150/?Beauty, Food, Toys" alt="">
-                    <h2>Pens</h2>
-                    <p>Upto 80% Off</p>
-                    <p>Big Discounts</p>
-                </div>
-
-
             </div>
         </div>
 
-    </main>
-    <br>
-    <br>
-    <footer class="flex-all-center">
-        <p class=>Coptyright &copy; MyCart.com</p>
-    </footer>
+        <div class="porfile_card">
+            <div class="line">
+                <img src="img/profile_img.jpg" alt="">
+                <span class="fuck">
+                    <strong>_dimple_58 </strong>
+                </span>
+                <br>
+                <span class="fuck">DIMPLE🦋</span>
+                <span class="luck">
+                    <strong>Switch</strong>
+                </span>
+            </div>
+
+            <span class="mid"> <strong>Suggestions For You</strong></span>
+            <span class="mid-left"><strong>See All</strong></span>
+
+
+            <div class="second_line">
+                <img src="img/cover 1.png" alt="">
+                <span class="fuck">
+                    <strong>Aman</strong>
+                </span>
+                <br>
+                <span class="fuck">
+                    Aman
+                </span>
+                <span class="luck">
+                    <strong>Switch</strong>
+                </span>
+            </div>
+            <div class="second_line">
+                <img src="img/cover 2.png" alt="">
+                <span class="fuck">
+                    <strong>Amit Raidas</strong>
+                </span>
+                <br>
+                <span class="fuck">
+                    Amit Raidas
+                </span>
+                <span class="luck">
+                    <strong>Switch</strong>
+                </span>
+            </div>
+            <div class="second_line">
+                <img src="img/cover 3.png" alt="">
+                <span class="fuck">
+                    <strong>aksht.maurya</strong>
+                </span>
+                <br>
+                <span class="fuck">
+                    aksht.maurya
+                </span>
+                <span class="luck">
+                    <strong>Switch</strong>
+                </span>
+            </div>
+            <div class="second_line">
+                <img src="img/cover 4.png" alt="">
+                <span class="fuck">
+                    <strong>code.clash</strong>
+                </span>
+                <br>
+                <span class="fuck">
+                    code.clash
+                </span>
+                <span class="luck">
+                    <strong>Switch</strong>
+                </span>
+            </div>
+            <div class="second_line">
+                <img src="img/cover 5.png" alt="">
+                <span class="fuck">
+                    <strong>codingni_nisha</strong>
+                </span>
+                <br>
+                <span class="fuck">
+                    codingni_nisha
+                </span>
+                <span class="luck">
+                    <strong>Switch</strong>
+                </span>
+            </div>
+
+            <footer>
+                <ul>
+                    <li><a href="http://instagram.com" target="_blank">About.</a></li>
+                    <li><a href="http://instagram.com" target="_blank">Help.</a></li>
+                    <li><a href="http://instagram.com" target="_blank">Press.</a></li>
+                    <li><a href="http://instagram.com" target="_blank">Api.</a></li>
+                    <li><a href="http://instagram.com" target="_blank">Jobs.</a></li>
+                    <li><a href="http://instagram.com" target="_blank">Privacy.</a></li>
+                    <li><a href="http://instagram.com" target="_blank">Terms.</a></li>
+                    <li><a href="http://instagram.com" target="_blank">Locations.</a></li>
+
+                </ul>
+
+                <span class="copyright">&#169; 2022 INSTAGRAM FORM NITESH AND COMPANY</span>
+
+            </footer>
+
+        </div>
+
+
+        <div class="card_container">
+            <div class="card">
+                <div class="card1">
+                    <div class="card_logo">
+                        <img src="img/friend.jpg" alt="" class="card_img">
+                    </div>
+                    <span style="font-size: 20px;" class="title">Strange_Man</span>
+                    <span style="font-size: 40px;" class="dot">...</span>
+                    <div class="main_img">
+                        <img class="front_img" src="img/cover 1.png" alt="">
+                    </div>
+                </div>
+                <div class="card_icon">
+                    <img class="newcard_icon" src="img/like.PNG" alt="">
+                    <img class="newcard_icon" src="img/comment.PNG" alt="">
+                    <img class="newcard_icon" src="img/send.PNG" alt="">
+                    <img class="newcard" src="img/save.PNG" alt="">
+                    <div class="tag">
+                        <div class="tags">
+                            <span>187,333 views</span>
+                        </div>
+                        <div class="tags">
+                            <span>_.chutiyapa._ Those days 🥺🥺</span>
+                        </div>
+                        <div class="tags">
+                            <span>View all 7 comments</span>
+                        </div>
+                        <div class="tags">
+                            <span>1 HOUR AGO</span>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="bottom_logo">
+                            <img class="bottom_img" src="img/smile.PNG" alt="">
+                            <div class="commnet">
+                                <input type="text" class="post" placeholder="Add a Comment">
+                                <button class="comment_btn">post</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1">
+                    <div class="card_logo">
+                        <img src="img/cover 2.png" alt="" class="card_img">
+                    </div>
+                    <span style="font-size: 20px;" class="title">Strange_Man</span>
+                    <span style="font-size: 40px;" class="dot">...</span>
+                    <div class="main_img">
+                        <img class="front_img" src="img/cover 2.png" alt="">
+                    </div>
+                </div>
+                <div class="card_icon">
+                    <img class="newcard_icon" src="img/like.PNG" alt="">
+                    <img class="newcard_icon" src="img/comment.PNG" alt="">
+                    <img class="newcard_icon" src="img/send.PNG" alt="">
+                    <img class="newcard" src="img/save.PNG" alt="">
+                    <div class="tag">
+                        <div class="tags">
+                            <span>187,333 views</span>
+                        </div>
+                        <div class="tags">
+                            <span>_.chutiyapa._ Those days 🥺🥺</span>
+                        </div>
+                        <div class="tags">
+                            <span>View all 7 comments</span>
+                        </div>
+                        <div class="tags">
+                            <span>1 HOUR AGO</span>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="bottom_logo">
+                            <img class="bottom_img" src="img/smile.PNG" alt="">
+                            <div class="commnet">
+                                <input type="text" class="post" placeholder="Add a Comment">
+                                <button class="comment_btn">post</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1">
+                    <div class="card_logo">
+                        <img src="img/cover 3.png" alt="" class="card_img">
+                    </div>
+                    <span style="font-size: 20px;" class="title">Strange_Man</span>
+                    <span style="font-size: 40px;" class="dot">...</span>
+                    <div class="main_img">
+                        <img class="front_img" src="img/cover 3.png" alt="">
+                    </div>
+                </div>
+                <div class="card_icon">
+                    <img class="newcard_icon" src="img/like.PNG" alt="">
+                    <img class="newcard_icon" src="img/comment.PNG" alt="">
+                    <img class="newcard_icon" src="img/send.PNG" alt="">
+                    <img class="newcard" src="img/save.PNG" alt="">
+                    <div class="tag">
+                        <div class="tags">
+                            <span>187,333 views</span>
+                        </div>
+                        <div class="tags">
+                            <span>_.chutiyapa._ Those days 🥺🥺</span>
+                        </div>
+                        <div class="tags">
+                            <span>View all 7 comments</span>
+                        </div>
+                        <div class="tags">
+                            <span>1 HOUR AGO</span>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="bottom_logo">
+                            <img class="bottom_img" src="img/smile.PNG" alt="">
+                            <div class="commnet">
+                                <input type="text" class="post" placeholder="Add a Comment">
+                                <button class="comment_btn">post</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1">
+                    <div class="card_logo">
+                        <img src="img/cover 4.png" alt="" class="card_img">
+                    </div>
+                    <span style="font-size: 20px;" class="title">Strange_Man</span>
+                    <span style="font-size: 40px;" class="dot">...</span>
+                    <div class="main_img">
+                        <img class="front_img" src="img/cover 4.png" alt="">
+                    </div>
+                </div>
+                <div class="card_icon">
+                    <img class="newcard_icon" src="img/like.PNG" alt="">
+                    <img class="newcard_icon" src="img/comment.PNG" alt="">
+                    <img class="newcard_icon" src="img/send.PNG" alt="">
+                    <img class="newcard" src="img/save.PNG" alt="">
+                    <div class="tag">
+                        <div class="tags">
+                            <span>187,333 views</span>
+                        </div>
+                        <div class="tags">
+                            <span>_.chutiyapa._ Those days 🥺🥺</span>
+                        </div>
+                        <div class="tags">
+                            <span>View all 7 comments</span>
+                        </div>
+                        <div class="tags">
+                            <span>1 HOUR AGO</span>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="bottom_logo">
+                            <img class="bottom_img" src="img/smile.PNG" alt="">
+                            <div class="commnet">
+                                <input type="text" class="post" placeholder="Add a Comment">
+                                <button class="comment_btn">post</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1">
+                    <div class="card_logo">
+                        <img src="img/cover 5.png" alt="" class="card_img">
+                    </div>
+                    <span style="font-size: 20px;" class="title">Strange_Man</span>
+                    <span style="font-size: 40px;" class="dot">...</span>
+                    <div class="main_img">
+                        <img class="front_img" src="img/cover 5.png" alt="">
+                    </div>
+                </div>
+                <div class="card_icon">
+                    <img class="newcard_icon" src="img/like.PNG" alt="">
+                    <img class="newcard_icon" src="img/comment.PNG" alt="">
+                    <img class="newcard_icon" src="img/send.PNG" alt="">
+                    <img class="newcard" src="img/save.PNG" alt="">
+                    <div class="tag">
+                        <div class="tags">
+                            <span>187,333 views</span>
+                        </div>
+                        <div class="tags">
+                            <span>_.chutiyapa._ Those days 🥺🥺</span>
+                        </div>
+                        <div class="tags">
+                            <span>View all 7 comments</span>
+                        </div>
+                        <div class="tags">
+                            <span>1 HOUR AGO</span>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="bottom_logo">
+                            <img class="bottom_img" src="img/smile.PNG" alt="">
+                            <div class="commnet">
+                                <input type="text" class="post" placeholder="Add a Comment">
+                                <button class="comment_btn">post</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1">
+                    <div class="card_logo">
+                        <img src="img/cover 6.png" alt="" class="card_img">
+                    </div>
+                    <span style="font-size: 20px;" class="title">Strange_Man</span>
+                    <span style="font-size: 40px;" class="dot">...</span>
+                    <div class="main_img">
+                        <img class="front_img" src="img/cover 6.png" alt="">
+                    </div>
+                </div>
+                <div class="card_icon">
+                    <img class="newcard_icon" src="img/like.PNG" alt="">
+                    <img class="newcard_icon" src="img/comment.PNG" alt="">
+                    <img class="newcard_icon" src="img/send.PNG" alt="">
+                    <img class="newcard" src="img/save.PNG" alt="">
+                    <div class="tag">
+                        <div class="tags">
+                            <span>187,333 views</span>
+                        </div>
+                        <div class="tags">
+                            <span>_.chutiyapa._ Those days 🥺🥺</span>
+                        </div>
+                        <div class="tags">
+                            <span>View all 7 comments</span>
+                        </div>
+                        <div class="tags">
+                            <span>1 HOUR AGO</span>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="bottom_logo">
+                            <img class="bottom_img" src="img/smile.PNG" alt="">
+                            <div class="commnet">
+                                <input type="text" class="post" placeholder="Add a Comment">
+                                <button class="comment_btn">post</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1">
+                    <div class="card_logo">
+                        <img src="img/cover 7.png" alt="" class="card_img">
+                    </div>
+                    <span style="font-size: 20px;" class="title">Strange_Man</span>
+                    <span style="font-size: 40px;" class="dot">...</span>
+                    <div class="main_img">
+                        <img class="front_img" src="img/cover 7.png" alt="">
+                    </div>
+                </div>
+                <div class="card_icon">
+                    <img class="newcard_icon" src="img/like.PNG" alt="">
+                    <img class="newcard_icon" src="img/comment.PNG" alt="">
+                    <img class="newcard_icon" src="img/send.PNG" alt="">
+                    <img class="newcard" src="img/save.PNG" alt="">
+                    <div class="tag">
+                        <div class="tags">
+                            <span>187,333 views</span>
+                        </div>
+                        <div class="tags">
+                            <span>_.chutiyapa._ Those days 🥺🥺</span>
+                        </div>
+                        <div class="tags">
+                            <span>View all 7 comments</span>
+                        </div>
+                        <div class="tags">
+                            <span>1 HOUR AGO</span>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="bottom_logo">
+                            <img class="bottom_img" src="img/smile.PNG" alt="">
+                            <div class="commnet">
+                                <input type="text" class="post" placeholder="Add a Comment">
+                                <button class="comment_btn">post</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="insta.js"></script>
 </body>
 
 </html>
