@@ -1,0 +1,790 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Baloo+Tammudu+2&family=Poppins:wght@800&family=Roboto:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo 2', cursive;
+}
+
+:root {
+    --heading: rgb(0 10 25);
+    --free: #3e64ff;
+    --para: #777;
+    --para-tint: #e4e4e4;
+    --white: #fff;
+    --black: #212529;
+    --helper: #8490ff;
+    --helper-tint: #f3f4ff;
+    --bg: rgb(249 249 255);
+    --gradient: linear-gradient(rgb(132 144 255) 0%, rgb(98 189 255) 100%);
+    --gradient-Support: -wbekit-linear-gradient(0deg, rgb(132 144 255) 0%, rgb(98 189 255) 100%);
+    --shadow: 0.5rem 0.5rem 1rem #8490ff;
+    --icon-color: #90acd033;
+}
+
+html {
+    font-size: 55%;
+    overflow-x: hidden;
+
+}
+
+body {
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+
+h1 {
+    color: var(--heading);
+    font-size: 6rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+p {
+    color: var(--para);
+    line-height: 1.6;
+    font-size: 1.7rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* 
+=====================================
+-------This is a header section-----
+===================================== */
+
+.header {
+    padding: 0 4.8rem;
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    height: 3rem;
+}
+
+.navbar-lists {
+    display: flex;
+    gap: 4.8rem;
+}
+
+.navbar-link:link,
+.navbar-link:visited {
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--black);
+    transition: all 0.3s linear;
+
+}
+
+.navbar-link:hover,
+.navbar-link:active {
+    color: var(--helper);
+}
+
+
+.mobile-navbar-btn {
+    display: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.mobile-nav-icon[name="close-outline"] {
+    display: none;
+}
+
+
+.navbar-lists {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navbar-lists .navbar-link {
+    font-size: 3.2rem;
+    color: var(--black);
+}
+
+
+
+
+
+
+
+
+/* 
+=====================================
+-------This is a reuseable code section-----
+===================================== */
+
+
+section {
+    padding: 9rem 0;
+
+}
+
+.grid {
+    display: grid;
+    gap: 9rem;
+
+}
+
+.grid-tow-column {
+    grid-template-columns: repeat(2, auto);
+    /* grid-template-columns: 1fr 1fr; */
+}
+
+.grid-three-column {
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: 1fr 1fr 1fr; */
+}
+
+.grid-four-column {
+    grid-template-columns: repeat(4, auto);
+    /* grid-template-columns: 1fr 1fr; */
+
+}
+
+.container {
+    max-width: 140rem;
+    margin: 0px auto;
+
+}
+
+
+
+.btn {
+    background-color: var(--helper);
+    display: inline-block;
+    text-transform: uppercase;
+    color: var(--helper-tint);
+    padding: 1rem 2rem;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.5s ease;
+
+}
+
+.btn:hover,
+.btn:active {
+    box-shadow: var(--shadow);
+}
+
+
+.common-heading {
+    font-weight: 600;
+    font-size: 4.8rem;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+
+.common-heading::before {
+    content: "";
+    position: absolute;
+    top: 935px;
+    left: 54%;
+    width: 1.5rem;
+    height: 1.4rem;
+    background-color: var(--helper);
+    border-radius: 50%;
+}
+
+.common-heading::after {
+    content: "";
+    position: absolute;
+    top: 940px;
+    left: 54%;
+    min-width: 20rem;
+    height: 0.3rem;
+    background-color: var(--helper);
+}
+
+/* 
+=====================================
+-------This is a hero section-----
+===================================== */
+
+
+.section-hero {
+    background-color: var(--bg);
+
+
+}
+
+.section-hero-data {
+    display: flex;
+    position: relative;
+    left: 15rem;
+    flex-direction: column;
+    justify-content: center;
+    width: 46rem;
+
+}
+
+.hero-top-data {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--helper);
+}
+
+.hero-heading {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 6.4rem;
+}
+
+.hero-para {
+    margin-top: 0.5rem;
+    margin-bottom: 5rem;
+    max-width: 60rem;
+}
+
+.section-hero-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img {
+    max-width: 40rem;
+}
+
+
+
+
+/* 
+=====================================
+-------This is a bio section-----
+===================================== */
+.section-biodata {
+    background-color: var(--bg);
+}
+
+
+.bio-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.bio-image img {
+    max-width: 60%;
+    box-shadow: -2rem -2rem 0px var(--helper);
+    display: inline-block;
+}
+
+.bio-data-stats {
+    display: flex;
+    padding: 6.4rem 0;
+    flex-direction: column;
+    gap: 3rem;
+
+}
+
+.bio-progress-bar {
+    position: relative;
+    width: 90%;
+    height: 0.8rem;
+    background-color: var(--para-tint);
+}
+
+.bio-progress-bar::before {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: inherit;
+    background-color: var(--helper);
+    border-radius: 10rem;
+}
+
+.bio-progress2::before {
+    width: 99%;
+}
+
+.bio-progress3::before {
+    width: 70%;
+}
+
+.bio-progress4::before {
+    width: 40%;
+}
+
+.bio-progress5::before {
+    width: 50%;
+}
+
+.bio-progress-bar span {
+    position: absolute;
+    left: 76%;
+    top: 1.8rem;
+    width: 4rem;
+    height: 2rem;
+    color: var(--white);
+    background-color: var(--helper);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+
+}
+
+.bio-progress2 span {
+    left: 95%;
+}
+
+.bio-progress3 span {
+    left: 66%;
+}
+
+.bio-progress4 span {
+    left: 36%;
+}
+
+.bio-progress5 span {
+    left: 46%;
+}
+
+
+/* creat  a carrot */
+
+.bio-progress-bar span::after {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border: 0.8rem solid var(--helper);
+    border-color: transparent;
+    border-bottom-color: var(--helper);
+    bottom: 2rem;
+}
+
+
+
+/* 
+=====================================
+-------This is a portfolio section-----
+===================================== */
+
+.container2 {
+    position: relative;
+    left: 100px;
+    width: 50vw;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.common::before {
+    content: "";
+    position: absolute;
+    top: 55px;
+    width: 1.5rem;
+    height: 1.4rem;
+    background-color: var(--helper);
+    border-radius: 50%;
+}
+
+.common::after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 60px;
+    min-width: 20rem;
+    height: 0.3rem;
+    background-color: var(--helper);
+}
+
+.img-overlay {
+    position: relative;
+    overflow: hidden;
+    left: 55px;
+    width: 250px;
+}
+
+.img-overlay .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: var(--helper);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(100%);
+    transition: all 0.4s linear;
+    border-radius: 10px;
+}
+
+.img-overlay:hover>.overlay {
+    transform: translateY(0);
+    cursor: pointer;
+    opacity: 0.8;
+
+}
+
+
+
+.p-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.2rem;
+    margin: 65px;
+
+}
+
+.portfolio-images img {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+
+.pro-heading {
+    position: relative;
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+
+.p-btn-active {
+    transform: translateY(-1rem);
+}
+
+
+
+/* 
+=====================================
+-------This is a counter section-----
+===================================== */
+
+.section-work-data {
+    padding: 0px 200px;
+}
+
+.counter-numbers {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.section-work-data p {
+    color: var(--black);
+    font-size: 20px;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+
+
+/* 
+=====================================
+-------This is a box part section-----
+===================================== */
+.section-services {
+    transition: all 0.7s initial;
+}
+
+.section-services .grid {
+    margin-top: 10rem;
+    gap: 10rem;
+}
+
+.section-services p {
+
+    max-width: 60rem;
+}
+
+.service-box {
+    text-align: center;
+    box-shadow: var(--shadow);
+    border-radius: 5px;
+    padding: 6.4rem 3.4rem;
+    transition: all 0.2s linear;
+}
+
+.service-box:hover {
+    transform: translateY(-3rem);
+}
+
+.service-icon {
+    width: 6rem;
+    height: 6rem;
+    background-color: var(--icon-color);
+    border-radius: 49% 51% 51% 49% / 41% 41% 59% 59%;
+    padding: 1.4rem 1.8rem;
+    position: relative;
+    color: var(--heading);
+    animation: water-wave 3s linear infinite;
+    /* box-shadow: 0px 0px 10px; */
+}
+
+.service-icon::after {
+    content: "";
+    border: 1px solid var(--black);
+    border-radius: 49% 51% 51% 49% / 41% 41% 59% 59%;
+    animation: water-wave 3s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    width: 90%;
+    height: 90%;
+}
+
+@keyframes water-wave {
+    0% {
+        border-radius: 49% 51% 51% 49% / 41% 41% 59% 59%;
+    }
+
+    50% {
+        border-radius: 3% 97% 15% 85% / 72% 0% 100% 28%;
+    }
+
+    100% {
+        border-radius: 49% 51% 51% 49% / 41% 41% 59% 59%;
+    }
+}
+
+/* 
+=====================================
+-------This is a scroll image bar section-----
+===================================== */
+
+.container3 img {
+    margin-bottom: 30px;
+    box-shadow: var(--shadow);
+}
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 
+=====================================
+-------This is a freelancing section-----
+===================================== */
+
+.section-freelancing {
+    background-image: url("../images/fifth-img.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
+    transition: all 0.7s linear;
+    height: 300px;
+}
+
+
+.section-freelancing .overlay {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+
+
+.section-freelancing h2 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+/* 
+=====================================
+-------This is a contact section-----
+===================================== */
+
+.section-contact-main {
+    max-width: 70rem;
+    margin: 0px auto;
+    margin-top: 9rem;
+    transition: all 0.3s linear;
+
+}
+
+.section-contact-main form {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+.section-contact-main input,
+.section-contact-main textarea {
+    padding: 1.5rem 2rem;
+    border: 0.1rem solid #c9c9c9;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    width: 100%;
+}
+
+.section-contact-main input[type=submit] {
+    max-width: 30%;
+    border: none;
+    outline: none;
+}
+
+/* =====================================
+-------This is a footer  section-----
+===================================== */
+
+.section-footer {
+    background-color: var(--heading);
+    transition: all 0.7s linear;
+}
+
+
+.section-footer h3 {
+    color: var(--white);
+    font-size: 30px;
+    margin-bottom: 4rem;
+    text-transform: capitalize;
+}
+
+.section-footer p {
+    color: var(--white);
+}
+
+.f-about {
+    padding-left: 10px;
+    margin-left: 155px;
+}
+
+
+.f-links ul,
+.f-sevices ul,
+.f-address address {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.f-links li,
+.f-links a,
+.f-sevices li,
+.f-sevices a {
+    font-size: 1.8rem;
+    color: #adadad;
+    text-transform: capitalize;
+    padding-left: 10px;
+}
+
+
+.f-address span,
+.f-address a {
+    padding-left: 10px;
+    font-size: 2rem;
+    font-style: normal;
+    color: #adadad;
+}
+
+.f-credits {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.socail-icons {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    gap: 30px;
+    margin-top: 25px;
+
+}
+
+.socail-icons .icons {
+    color: var(--white);
+    animation: water-wave 3s linear infinite;
+}
+
+
+/* scroll to top button */
+
+
+.scrollTop-style {
+    position: fixed;
+    right: 2rem;
+    bottom: 5%;
+    z-index: 1;
+}
+
+.scroll-top {
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--helper);
+    display: inline-block;
+    padding: 1.4rem 1.8rem;
+    color: var(--white);
+    cursor: pointer;
+    border-radius: 50%;
+    animation: water-wave 3s linear infinite;
+}

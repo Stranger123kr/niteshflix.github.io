@@ -5,476 +5,511 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="MediaQuery.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/media-query.css">
+    <script defer src="index.js"></script>
+
+
 
 </head>
 
 <body>
 
-    <header>
+    <header class="header">
+        <img src="images/logo.png" alt="Logo imgage" class="logo" />
 
-        <div class="hlogo">
-            <img src="img/logo.PNG" alt="">
+        <nav class="navbar">
+            <ul class="navbar-lists">
+                <li><a href="#" class="navbar-link  home-link">Home</a></li>
+                <li><a href="about.html" class="navbar-link  about-link">About</a></li>
+                <li><a href="service.html" class="navbar-link  services-link">Services</a></li>
+                <li><a href="#" class="navbar-link  portfolio-link">Portfolio</a></li>
+                <li><a href="contact.html" class="navbar-link  contact-link" target="_blank">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-navbar-btn">
+            <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+            <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
         </div>
-
-
-        <div class="search">
-            <input type="text" placeholder="Search">
-        </div>
-
-
-        <div class="logo">
-            <img src="img/home.PNG" alt="">
-            <img src="img/send.PNG" alt="">
-            <img src="img/add.PNG" alt="">
-            <img src="img/explore.PNG" alt="">
-            <img src="img/like.PNG" alt="">
-            <img class="profile" src="img/profile_img.jpg" alt="">
-        </div>
-
     </header>
 
 
-    <section>
-        <div class="container">
-            <div class="horizontal-scroll">
-                <button class="btn-scroll" id="btn-sroll-left" onclick="scrollHorizontally(1)">&#x3c;</button>
-                <button class="btn-scroll" id="btn-sroll-right" onclick="scrollHorizontally(-1)">&#x3e;</button>
-                <div class="storys-container">
-                    <div class="story-circle">
-                        <img src="img/friend.jpg" alt="">
+    <!-- =====================================
+    -------This is a our hero section-----
+    ===================================== -->
+
+
+    <main>
+        <section class="section-hero  section">
+            <div class="container grid   grid-tow-column">
+                <div class="section-hero-data">
+                    <p class="hero-top-data">This is me</p>
+                    <h1 class="hero-heading">Nitesh Don</h1>
+                    <p class="hero-para">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum minima libero, enim rem doloremque
+                        sint nihil, quis dolorum, dolor dicta cumque quos culpa. Quaerat, iure odit suscipit molestias
+                        eos eum.</p>
+                    <div>
+                        <a href="#" class="btn hireme-btn">Hireme</a>
                     </div>
-                    <div class="story-circle">
-                        <img src="img/cover 2.png" alt="">
+                </div>
+
+                <!-- <<<<---hero seciton right side--->
+
+                <div class="section-hero-img">
+
+                    <img src="images/fourth-img.jpg" alt="This is me Nitesh" class="hero-img">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- =====================================
+    -------This is a our bio data section-----
+    ===================================== -->
+    <section class="section-biodata  section">
+        <div class="container grid   grid-tow-column">
+            <div class="bio-image">
+                <img src="images/fourth-img.jpg" alt="">
+            </div>
+
+            <!-- <---- bio right side  data--->
+
+            <div class="bio-data">
+                <h2 class="common-heading">my-bio-Data</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, iusto aut aspernatur, quidem eum ea, ab
+                    facere. Beatae.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus aut quo porro cupiditate quis.
+                    Similique doloribus cul. </p>
+                <div class="bio-data-stats">
+                    <div class="bio-stats">
+                        <h3>Design</h3>
+                        <div class="bio-progress-bar">
+                            <span>80%</span>
+                        </div>
                     </div>
-                    <div class="story-circle">
-                        <img src="img/cover 3.png" alt="">
+                    <div class="bio-stats">
+                        <h3>Html</h3>
+                        <div class="bio-progress-bar  bio-progress2">
+                            <span>80%</span>
+                        </div>
                     </div>
-                    <div class="story-circle">
-                        <img src="img/cover 4.png" alt="">
+                    <div class="bio-stats">
+                        <h3>Css</h3>
+                        <div class="bio-progress-bar  bio-progress3">
+                            <span>80%</span>
+                        </div>
                     </div>
-                    <div class="story-circle">
-                        <img src="img/cover 5.png" alt="">
+                    <div class="bio-stats">
+                        <h3>Javascript</h3>
+                        <div class="bio-progress-bar  bio-progress4">
+                            <span>80%</span>
+                        </div>
                     </div>
-                    <div class="story-circle">
-                        <img src="img/cover 6.png" alt="">
+                    <div class="bio-stats">
+                        <h3>Mern</h3>
+                        <div class="bio-progress-bar  bio-progress5">
+                            <span>80%</span>
+                        </div>
                     </div>
-                    <div class="story-circle">
-                        <img src="img/cover 7.png" alt="">
-                    </div>
-                    <div class="story-circle">
-                        <img src="img/cover 8.png" alt="">
-                    </div>
-                    <div class="story-circle">
-                        <img src="img/cover 9.png" alt="">
-                    </div>
-                    <div class="story-circle">
-                        <img src="img/cover 10.png" alt="">
-                    </div>
+                </div>
+                <div class="bio-data-btn">
+                    <a href="#" class="btn">Download Cv</a>
                 </div>
             </div>
         </div>
 
-        <div class="porfile_card">
-            <div class="line">
-                <img src="img/profile_img.jpg" alt="">
-                <span class="fuck">
-                    <strong>_dimple_58 </strong>
-                </span>
+    </section>
+
+
+    <!-- =====================================
+    -------This is a our portfolio  section-----
+    ===================================== -->
+
+    <section section section-portfolio id="portfolio-section">
+
+        <div class="container2">
+            <h2 class="common">Latest Works</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum rerum assumenda totam, at, dolorum libero
                 <br>
-                <span class="fuck">DIMPLE🦋</span>
-                <span class="luck">
-                    <strong>Switch</strong>
-                </span>
-            </div>
-
-            <span class="mid"> <strong>Suggestions For You</strong></span>
-            <span class="mid-left"><strong>See All</strong></span>
-
-
-            <div class="second_line">
-                <img src="img/cover 1.png" alt="">
-                <span class="fuck">
-                    <strong>Aman</strong>
-                </span>
-                <br>
-                <span class="fuck">
-                    Aman
-                </span>
-                <span class="luck">
-                    <strong>Switch</strong>
-                </span>
-            </div>
-            <div class="second_line">
-                <img src="img/cover 2.png" alt="">
-                <span class="fuck">
-                    <strong>Amit Raidas</strong>
-                </span>
-                <br>
-                <span class="fuck">
-                    Amit Raidas
-                </span>
-                <span class="luck">
-                    <strong>Switch</strong>
-                </span>
-            </div>
-            <div class="second_line">
-                <img src="img/cover 3.png" alt="">
-                <span class="fuck">
-                    <strong>aksht.maurya</strong>
-                </span>
-                <br>
-                <span class="fuck">
-                    aksht.maurya
-                </span>
-                <span class="luck">
-                    <strong>Switch</strong>
-                </span>
-            </div>
-            <div class="second_line">
-                <img src="img/cover 4.png" alt="">
-                <span class="fuck">
-                    <strong>code.clash</strong>
-                </span>
-                <br>
-                <span class="fuck">
-                    code.clash
-                </span>
-                <span class="luck">
-                    <strong>Switch</strong>
-                </span>
-            </div>
-            <div class="second_line">
-                <img src="img/cover 5.png" alt="">
-                <span class="fuck">
-                    <strong>codingni_nisha</strong>
-                </span>
-                <br>
-                <span class="fuck">
-                    codingni_nisha
-                </span>
-                <span class="luck">
-                    <strong>Switch</strong>
-                </span>
-            </div>
-
-            <footer>
-                <ul>
-                    <li><a href="http://instagram.com" target="_blank">About.</a></li>
-                    <li><a href="http://instagram.com" target="_blank">Help.</a></li>
-                    <li><a href="http://instagram.com" target="_blank">Press.</a></li>
-                    <li><a href="http://instagram.com" target="_blank">Api.</a></li>
-                    <li><a href="http://instagram.com" target="_blank">Jobs.</a></li>
-                    <li><a href="http://instagram.com" target="_blank">Privacy.</a></li>
-                    <li><a href="http://instagram.com" target="_blank">Terms.</a></li>
-                    <li><a href="http://instagram.com" target="_blank">Locations.</a></li>
-
-                </ul>
-
-                <span class="copyright">&#169; 2022 INSTAGRAM FORM NITESH AND COMPANY</span>
-
-            </footer>
-
+                dolores ea omnis quisquam ut deleniti. Ducimus cum officiis incidunt soluta tenetur ab eaque deleniti.
+            </p>
         </div>
 
+        <div class="p-btns">
+            <div class="btn p-btn" data-btn-num="1">WEBSITE</div>
+            <div class="btn p-btn" data-btn-num="2">YOUTUBE</div>
+            <div class="btn p-btn" data-btn-num="3">DESIGN</div>
+        </div>
 
-        <div class="card_container">
-            <div class="card">
-                <div class="card1">
-                    <div class="card_logo">
-                        <img src="img/friend.jpg" alt="" class="card_img">
-                    </div>
-                    <span style="font-size: 20px;" class="title">Strange_Man</span>
-                    <span style="font-size: 40px;" class="dot">...</span>
-                    <div class="main_img">
-                        <img class="front_img" src="img/cover 1.png" alt="">
-                    </div>
+        <div class="container grid  grid-three-column portfolio-images">
+            <div class="img-overlay p-btn-1">
+                <img src="images/fourth-img.jpg" alt="">
+
+                <div class="overlay">
+                    <a href="https://www.google.com" target="_blank" class="pro-heading">porject 1</a>
+
                 </div>
-                <div class="card_icon">
-                    <img class="newcard_icon" src="img/like.PNG" alt="">
-                    <img class="newcard_icon" src="img/comment.PNG" alt="">
-                    <img class="newcard_icon" src="img/send.PNG" alt="">
-                    <img class="newcard" src="img/save.PNG" alt="">
-                    <div class="tag">
-                        <div class="tags">
-                            <span>187,333 views</span>
-                        </div>
-                        <div class="tags">
-                            <span>_.chutiyapa._ Those days 🥺🥺</span>
-                        </div>
-                        <div class="tags">
-                            <span>View all 7 comments</span>
-                        </div>
-                        <div class="tags">
-                            <span>1 HOUR AGO</span>
-                        </div>
-                    </div>
-                    <div class="bottom">
-                        <div class="bottom_logo">
-                            <img class="bottom_img" src="img/smile.PNG" alt="">
-                            <div class="commnet">
-                                <input type="text" class="post" placeholder="Add a Comment">
-                                <button class="comment_btn">post</button>
-                            </div>
-                        </div>
-                    </div>
+
+            </div>
+            <div class="img-overlay p-btn-2">
+                <img src="images/fourth-img.jpg" alt="">
+
+                <div class="overlay">
+                    <a href="https://www.google.com" target="_blank" class="pro-heading">porject 2</a>
+
                 </div>
             </div>
-            <div class="card">
-                <div class="card1">
-                    <div class="card_logo">
-                        <img src="img/cover 2.png" alt="" class="card_img">
-                    </div>
-                    <span style="font-size: 20px;" class="title">Strange_Man</span>
-                    <span style="font-size: 40px;" class="dot">...</span>
-                    <div class="main_img">
-                        <img class="front_img" src="img/cover 2.png" alt="">
-                    </div>
+            <div class="img-overlay p-btn-3">
+                <img src="images/fourth-img.jpg" alt="">
+
+                <div class="overlay">
+                    <a href="https://www.google.com" target="_blank" class="pro-heading">porject 3</a>
+
                 </div>
-                <div class="card_icon">
-                    <img class="newcard_icon" src="img/like.PNG" alt="">
-                    <img class="newcard_icon" src="img/comment.PNG" alt="">
-                    <img class="newcard_icon" src="img/send.PNG" alt="">
-                    <img class="newcard" src="img/save.PNG" alt="">
-                    <div class="tag">
-                        <div class="tags">
-                            <span>187,333 views</span>
-                        </div>
-                        <div class="tags">
-                            <span>_.chutiyapa._ Those days 🥺🥺</span>
-                        </div>
-                        <div class="tags">
-                            <span>View all 7 comments</span>
-                        </div>
-                        <div class="tags">
-                            <span>1 HOUR AGO</span>
-                        </div>
-                    </div>
-                    <div class="bottom">
-                        <div class="bottom_logo">
-                            <img class="bottom_img" src="img/smile.PNG" alt="">
-                            <div class="commnet">
-                                <input type="text" class="post" placeholder="Add a Comment">
-                                <button class="comment_btn">post</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
             </div>
-            <div class="card">
-                <div class="card1">
-                    <div class="card_logo">
-                        <img src="img/cover 3.png" alt="" class="card_img">
-                    </div>
-                    <span style="font-size: 20px;" class="title">Strange_Man</span>
-                    <span style="font-size: 40px;" class="dot">...</span>
-                    <div class="main_img">
-                        <img class="front_img" src="img/cover 3.png" alt="">
-                    </div>
+            <div class="img-overlay p-btn-3">
+                <img src="images/fourth-img.jpg" alt="">
+
+                <div class="overlay">
+                    <a href="https://www.google.com" target="_blank" class="pro-heading">porject 4</a>
+
                 </div>
-                <div class="card_icon">
-                    <img class="newcard_icon" src="img/like.PNG" alt="">
-                    <img class="newcard_icon" src="img/comment.PNG" alt="">
-                    <img class="newcard_icon" src="img/send.PNG" alt="">
-                    <img class="newcard" src="img/save.PNG" alt="">
-                    <div class="tag">
-                        <div class="tags">
-                            <span>187,333 views</span>
-                        </div>
-                        <div class="tags">
-                            <span>_.chutiyapa._ Those days 🥺🥺</span>
-                        </div>
-                        <div class="tags">
-                            <span>View all 7 comments</span>
-                        </div>
-                        <div class="tags">
-                            <span>1 HOUR AGO</span>
-                        </div>
-                    </div>
-                    <div class="bottom">
-                        <div class="bottom_logo">
-                            <img class="bottom_img" src="img/smile.PNG" alt="">
-                            <div class="commnet">
-                                <input type="text" class="post" placeholder="Add a Comment">
-                                <button class="comment_btn">post</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
             </div>
-            <div class="card">
-                <div class="card1">
-                    <div class="card_logo">
-                        <img src="img/cover 4.png" alt="" class="card_img">
-                    </div>
-                    <span style="font-size: 20px;" class="title">Strange_Man</span>
-                    <span style="font-size: 40px;" class="dot">...</span>
-                    <div class="main_img">
-                        <img class="front_img" src="img/cover 4.png" alt="">
-                    </div>
+            <div class="img-overlay p-btn-2">
+                <img src="images/fourth-img.jpg" alt="">
+
+                <div class="overlay">
+                    <a href="https://www.google.com" target="_blank" class="pro-heading">porject 5</a>
+
                 </div>
-                <div class="card_icon">
-                    <img class="newcard_icon" src="img/like.PNG" alt="">
-                    <img class="newcard_icon" src="img/comment.PNG" alt="">
-                    <img class="newcard_icon" src="img/send.PNG" alt="">
-                    <img class="newcard" src="img/save.PNG" alt="">
-                    <div class="tag">
-                        <div class="tags">
-                            <span>187,333 views</span>
-                        </div>
-                        <div class="tags">
-                            <span>_.chutiyapa._ Those days 🥺🥺</span>
-                        </div>
-                        <div class="tags">
-                            <span>View all 7 comments</span>
-                        </div>
-                        <div class="tags">
-                            <span>1 HOUR AGO</span>
-                        </div>
-                    </div>
-                    <div class="bottom">
-                        <div class="bottom_logo">
-                            <img class="bottom_img" src="img/smile.PNG" alt="">
-                            <div class="commnet">
-                                <input type="text" class="post" placeholder="Add a Comment">
-                                <button class="comment_btn">post</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
             </div>
-            <div class="card">
-                <div class="card1">
-                    <div class="card_logo">
-                        <img src="img/cover 5.png" alt="" class="card_img">
-                    </div>
-                    <span style="font-size: 20px;" class="title">Strange_Man</span>
-                    <span style="font-size: 40px;" class="dot">...</span>
-                    <div class="main_img">
-                        <img class="front_img" src="img/cover 5.png" alt="">
-                    </div>
+            <div class="img-overlay p-btn-1">
+                <img src="images/fourth-img.jpg" alt="">
+
+                <div class="overlay">
+                    <a href="https://www.google.com" target="_blank" class="pro-heading">porject 6</a>
+
                 </div>
-                <div class="card_icon">
-                    <img class="newcard_icon" src="img/like.PNG" alt="">
-                    <img class="newcard_icon" src="img/comment.PNG" alt="">
-                    <img class="newcard_icon" src="img/send.PNG" alt="">
-                    <img class="newcard" src="img/save.PNG" alt="">
-                    <div class="tag">
-                        <div class="tags">
-                            <span>187,333 views</span>
-                        </div>
-                        <div class="tags">
-                            <span>_.chutiyapa._ Those days 🥺🥺</span>
-                        </div>
-                        <div class="tags">
-                            <span>View all 7 comments</span>
-                        </div>
-                        <div class="tags">
-                            <span>1 HOUR AGO</span>
-                        </div>
-                    </div>
-                    <div class="bottom">
-                        <div class="bottom_logo">
-                            <img class="bottom_img" src="img/smile.PNG" alt="">
-                            <div class="commnet">
-                                <input type="text" class="post" placeholder="Add a Comment">
-                                <button class="comment_btn">post</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
             </div>
-            <div class="card">
-                <div class="card1">
-                    <div class="card_logo">
-                        <img src="img/cover 6.png" alt="" class="card_img">
-                    </div>
-                    <span style="font-size: 20px;" class="title">Strange_Man</span>
-                    <span style="font-size: 40px;" class="dot">...</span>
-                    <div class="main_img">
-                        <img class="front_img" src="img/cover 6.png" alt="">
-                    </div>
-                </div>
-                <div class="card_icon">
-                    <img class="newcard_icon" src="img/like.PNG" alt="">
-                    <img class="newcard_icon" src="img/comment.PNG" alt="">
-                    <img class="newcard_icon" src="img/send.PNG" alt="">
-                    <img class="newcard" src="img/save.PNG" alt="">
-                    <div class="tag">
-                        <div class="tags">
-                            <span>187,333 views</span>
-                        </div>
-                        <div class="tags">
-                            <span>_.chutiyapa._ Those days 🥺🥺</span>
-                        </div>
-                        <div class="tags">
-                            <span>View all 7 comments</span>
-                        </div>
-                        <div class="tags">
-                            <span>1 HOUR AGO</span>
-                        </div>
-                    </div>
-                    <div class="bottom">
-                        <div class="bottom_logo">
-                            <img class="bottom_img" src="img/smile.PNG" alt="">
-                            <div class="commnet">
-                                <input type="text" class="post" placeholder="Add a Comment">
-                                <button class="comment_btn">post</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        </div>
+    </section>
+
+
+    <!-- =====================================
+    -------This is a our counter  section-----
+    ===================================== -->
+
+
+    <section class="section section-work-data">
+        <div class="container grid  grid-four-column ">
+            <div>
+                <h2 class="counter-numbers" data-number="2000">0+</h2>
+                <p>Project Complete</p>
             </div>
-            <div class="card">
-                <div class="card1">
-                    <div class="card_logo">
-                        <img src="img/cover 7.png" alt="" class="card_img">
-                    </div>
-                    <span style="font-size: 20px;" class="title">Strange_Man</span>
-                    <span style="font-size: 40px;" class="dot">...</span>
-                    <div class="main_img">
-                        <img class="front_img" src="img/cover 7.png" alt="">
-                    </div>
-                </div>
-                <div class="card_icon">
-                    <img class="newcard_icon" src="img/like.PNG" alt="">
-                    <img class="newcard_icon" src="img/comment.PNG" alt="">
-                    <img class="newcard_icon" src="img/send.PNG" alt="">
-                    <img class="newcard" src="img/save.PNG" alt="">
-                    <div class="tag">
-                        <div class="tags">
-                            <span>187,333 views</span>
-                        </div>
-                        <div class="tags">
-                            <span>_.chutiyapa._ Those days 🥺🥺</span>
-                        </div>
-                        <div class="tags">
-                            <span>View all 7 comments</span>
-                        </div>
-                        <div class="tags">
-                            <span>1 HOUR AGO</span>
-                        </div>
-                    </div>
-                    <div class="bottom">
-                        <div class="bottom_logo">
-                            <img class="bottom_img" src="img/smile.PNG" alt="">
-                            <div class="commnet">
-                                <input type="text" class="post" placeholder="Add a Comment">
-                                <button class="comment_btn">post</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div>
+                <h2 class="counter-numbers" data-number="6000">0+</h2>
+                <p>Happy client</p>
+            </div>
+            <div>
+                <h2 class="counter-numbers" data-number="5000">0+</h2>
+                <p>Cups or Coffee</p>
+            </div>
+            <div>
+                <h2 class="counter-numbers" data-number="3000">0+</h2>
+                <p>Professionals</p>
             </div>
         </div>
     </section>
 
 
 
+    <!-- =====================================
+    -------This is a our services  section-----
+    ===================================== -->
 
-    <script src="insta.js"></script>
+    <section class="section section-services ">
+        <div class="container">
+            <h2 class="common-heading">Services</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur necessitatibus nostrum ab eum error.
+                Dolores sequi accusantium esse vel minima mollitia quibusdam unde impedit fugit deleniti dignissimos
+                excepturi, earum iure.</p>
+        </div>
+
+        <!-- sevices offers card----->
+
+        <div class="container grid  grid-three-column ">
+
+            <div class="service-box">
+                <ion-icon name="desktop-outline" class="service-icon"></ion-icon>
+                <h3>Web Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos mollitia ea tenetur beatae quas dolores
+                    in corpori</p>
+            </div>
+            <div class="service-box">
+                <ion-icon name="code-sharp" class="service-icon"></ion-icon>
+                <h3>Web Devloper</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos mollitia ea tenetur beatae quas dolores
+                    in corpori</p>
+            </div>
+            <div class="service-box">
+                <ion-icon name="image-sharp" class="service-icon"></ion-icon>
+                <h3>Photography</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos mollitia ea tenetur beatae quas dolores
+                    in corpori</p>
+            </div>
+            <div class="service-box">
+                <ion-icon name="clipboard-outline" class="service-icon"></ion-icon>
+                <h3>Web Ui/Ux</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos mollitia ea tenetur beatae quas dolores
+                    in corpori</p>
+            </div>
+            <div class="service-box">
+                <ion-icon name="laptop-outline" class="service-icon"></ion-icon>
+                <h3>App Devloper</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos mollitia ea tenetur beatae quas dolores
+                    in corpori</p>
+            </div>
+            <div class="service-box">
+                <ion-icon name="bug-outline" class="service-icon"></ion-icon>
+                <h3>Graphic Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos mollitia ea tenetur beatae quas dolores
+                    in corpori</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- =====================================
+    -------This is a our image scroll bar section-----
+    ===================================== -->
+    <section class="section section-services ">
+        <div class=" container3 grid-three-column">
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/first-img.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/third-img.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/fifth-img.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/fifth2-img.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/sixth-img.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/eight-img.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/thenth-img.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/fifth-img.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/fifth2-img.jpg" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =====================================
+    -------This is a our freelancing section-----
+    ===================================== -->
+
+    <section class="section section-freelancing ">
+        <div class="overlay">
+            <div class="container">
+                <h2>I am <span style="color: rgb(255, 251, 0) ;">available</span>for freelancing/h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, minus. Magnam odit non iure,
+                        nesciunt at omnis </p>
+                    <a href="contact.html" class="btn">hire me</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- =====================================
+    -------This is a our freelancing section-----
+    ===================================== -->
+
+    <section class="section section-contact ">
+
+        <div class="container">
+            <h2 class="common-heading">Contact Us</h2>
+
+        </div>
+
+        <div class="section-contact-main  contact-container">
+            <form action="https://formspree.io/f/mnqrjkkr" method="POST">
+                <div class="grid grid-tow-column">
+                    <div>
+                        <label for="username"></label>
+                        <input type="text" name="username" required minlength="3" maxlength="8" id="username"
+                            placeholder="username ">
+                    </div>
+
+                    <div>
+                        <label for="email"></label>
+                        <input type="email" name="email" required placeholder="email">
+                    </div>
+                </div>
+                <div>
+                    <label for="subject"></label>
+                    <input type="subject" name="subject" required placeholder="subject" id="subject" minlength="2" >
+                </div>
+                <div>
+                    <label for="textarea"></label>
+                    <textarea name="textarea" id="textarea" autocomplete="off" required placeholder="Enter your query"
+                        cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                    <input type="submit" name="submit" autocomplete="off" required value="submit here" id="submit"
+                        class="btn">
+                </div>
+
+        </div>
+        </form>
+        </div>
+
+
+    </section>
+
+    <!-- =====================================
+    -------This is a our footer section-----
+    ===================================== -->
+
+    <footer class="section-footer">
+        <div class="container grid grid-four-column">
+            <div class="f-about">
+                <h3 f-h3>About</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sint debitis, expedita quis
+                    qui nemo beatae veritatis numquam amet ullam sit magnam eum it?</p>
+            </div>
+            <!-- <---end--->
+            <div class="f-links">
+                <h3>links</h3>
+                <ul>
+                    <li>
+                        <span>
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </span></ion-icon><a href="#">Home</a>
+                    </li>
+                    <li>
+                        <span>
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </span></ion-icon><a href="#">About</a>
+                    </li>
+                    <li>
+                        <span>
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </span></ion-icon><a href="#">Service</a>
+                    </li>
+                    <li>
+                        <span>
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </span></ion-icon><a href="#">Portfolio</a>
+                    </li>
+                    <li>
+                        <span>
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </span></ion-icon><a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="f-sevices">
+                <h3>Services</h3>
+                <ul>
+                    <li>
+                        <span>
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </span></ion-icon><a href="#">Home</a>
+                    </li>
+                    <li>
+                        <span>
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </span></ion-icon><a href="#">About</a>
+                    </li>
+                    <li>
+                        <span>
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </span></ion-icon><a href="#">Service</a>
+                    </li>
+                    <li>
+                        <span>
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </span></ion-icon><a href="#">Portfolio</a>
+                    </li>
+                    <li>
+                        <span>
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </span></ion-icon><a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="f-address">
+                <h3>Have a Qurestion</h3>
+                <address>
+                    <div>
+                        <span>
+                            <ion-icon name="location-outline"></ion-icon>
+                        </span> <a href="#">Delhi , India</a>
+                    </div>
+                    <div>
+                        <span>
+                            <ion-icon name="call-outline"></ion-icon>
+                        </span> <a href="tel:9187654321">+91 80761000</a>
+                    </div>
+                    <div>
+                        <span>
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </span> <a href="mailto:nitesh@.com">nitesh@gmail.com</a>
+                    </div>
+                </address>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="socail-icons">
+                <a href="#">
+                    <ion-icon class="icons" name="logo-instagram"></ion-icon>
+
+                </a>
+                <a href="#">
+                    <ion-icon class="icons" name="logo-discord"></ion-icon>
+
+                </a>
+                <a href="#">
+                    <ion-icon class="icons" name="logo-youtube"></ion-icon>
+
+                </a>
+            </div>
+        </div>
+
+        <div class="f-credits">
+            <p>Copyright ©2022 All rights reserved | This template is made by with 🤍 by thapa technical</p>
+        </div>
+    </footer>
+
+
+
+    <!-- =====================================
+    -------This is a our topup button section-----
+    ===================================== -->
+
+
+    <div class="scrollTop-style">
+        <ion-icon name="arrow-up-outline" class="scroll-top"></ion-icon>
+    </div>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
 </body>
 
 </html>
