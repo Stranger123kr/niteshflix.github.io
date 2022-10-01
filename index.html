@@ -5,510 +5,504 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio Website">
+    <meta name="keywords"
+        content="HTML, CSS, JavaScript, por custom web design services,  web design services,  web design firm,  web design studio,  web design boutique,  web design solutions">
+    <meta name="author" content="Nitesh">
     <link rel="stylesheet" href="css/style.css">
-    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/mediaqueary.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/media-query.css">
+    <link rel="shortcut icon" href="images/main-favicon.ico" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script defer src="index.js"></script>
-
-
-
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <title>Portfolio</title>
 </head>
 
 <body>
 
-    <header class="header">
-        <img src="images/logo.png" alt="Logo imgage" class="logo" />
+    <!-- /* ======================================
+    This is a Header part 
+=========================================*/ -->
 
+    <!-- this is a unique border  -->
+
+    <div class="custom-shape-divider-bottom-1663870133">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path
+                d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                opacity=".25" class="shape-fill"></path>
+            <path
+                d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                opacity=".5" class="shape-fill"></path>
+            <path
+                d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                class="shape-fill"></path>
+        </svg>
+    </div>
+
+
+    <header class="header">
+        <!-- this is a logo  -->
+        <h2 class="h-logo">Port<span>folio</span></h2>
         <nav class="navbar">
-            <ul class="navbar-lists">
-                <li><a href="#" class="navbar-link  home-link">Home</a></li>
-                <li><a href="about.html" class="navbar-link  about-link">About</a></li>
-                <li><a href="service.html" class="navbar-link  services-link">Services</a></li>
-                <li><a href="#" class="navbar-link  portfolio-link">Portfolio</a></li>
-                <li><a href="contact.html" class="navbar-link  contact-link" target="_blank">Contact</a></li>
+            <ul class="navbar-list">
+                <li><a href="#Home" class="navbar-links  home-link">Home</a></li>
+                <li><a href="#about-me" class="navbar-links  about-link">About</a></li>
+                <li><a href="#Query" class="navbar-links  resume-link">Query</a></li>
+                <li><a href="#my-resume" class="navbar-links  services-link">Resume</a></li>
+                <li><a href="#my-projects" class="navbar-links  works-link">Projects</a></li>
+                <li><a href="#my-bio-data" class="navbar-links  works-link">Bio-Data</a></li>
             </ul>
         </nav>
-        <div class="mobile-navbar-btn">
-            <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
-            <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+
+        <div class="mobile-nav">
+            <ion-icon class="mobile-icon" name="menu-outline"></ion-icon>
+            <ion-icon class="mobile-icon close" name="close-outline"></ion-icon>
         </div>
     </header>
 
-
-    <!-- =====================================
-    -------This is a our hero section-----
-    ===================================== -->
-
-
+    <!-- /* ======================================
+    This is a Hero section
+=========================================*/ -->
     <main>
-        <section class="section-hero  section">
-            <div class="container grid   grid-tow-column">
+        <section id="Home" class="section-hero sections">
+            <div class="container grid grid-two-column">
                 <div class="section-hero-data">
-                    <p class="hero-top-data">This is me</p>
-                    <h1 class="hero-heading">Nitesh Don</h1>
-                    <p class="hero-para">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum minima libero, enim rem doloremque
-                        sint nihil, quis dolorum, dolor dicta cumque quos culpa. Quaerat, iure odit suscipit molestias
-                        eos eum.</p>
-                    <div>
-                        <a href="#" class="btn hireme-btn">Hireme</a>
-                    </div>
+                    <!-- hero section left side part -->
+                    <h2 class="hero-top-data h2">Hi, My Name is</h2>
+                    <h1 class="hero-heading">Nitesh</h1>
+                    <h2 class="hero-middle-data">I'm<h2>
+                            <h2 class="hero-bottom-data"><span class="hero"></span></h2>
+                            <p class="hero-para">
+                                Medium level experience in web design and web
+                                development knowledge, and working
+                                quality work.
+                            </p>
+                            <div>
+                                <a href="#" class="btn hire-me" style="color: var(--white) ;">Contact Me <ion-icon
+                                        name="caret-forward-outline" class="contact-icon"></ion-icon></a>
+                            </div>
                 </div>
-
-                <!-- <<<<---hero seciton right side--->
-
+                <!-- hero section right side part -->
                 <div class="section-hero-img">
-
-                    <img src="images/fourth-img.jpg" alt="This is me Nitesh" class="hero-img">
+                    <img src="images/profilre.jpg" alt="this is Nitesh" class="hero-img">
                 </div>
+
             </div>
         </section>
     </main>
 
-    <!-- =====================================
-    -------This is a our bio data section-----
-    ===================================== -->
-    <section class="section-biodata  section">
-        <div class="container grid   grid-tow-column">
-            <div class="bio-image">
-                <img src="images/fourth-img.jpg" alt="">
+    <!-- /* ======================================
+    This is a about section
+=========================================*/ -->
+
+    <section id="about-me" class="section-hero section">
+        <!-- this is head of about -->
+        <div class="About">
+            <h2 class="all_h2">About Me</h2>
+            <p class="head-p">Introduction</p>
+        </div>
+        <div class="container grid grid-two-column">
+            <!--this is a left side img -->
+            <div class="section-hero-img">
+                <img src="images/about-me-img.jpg" alt="this is Nitesh" class="about-img" loading="lazy">
             </div>
 
-            <!-- <---- bio right side  data--->
 
-            <div class="bio-data">
-                <h2 class="common-heading">my-bio-Data</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, iusto aut aspernatur, quidem eum ea, ab
-                    facere. Beatae.</p>
-                <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus aut quo porro cupiditate quis.
-                    Similique doloribus cul. </p>
-                <div class="bio-data-stats">
-                    <div class="bio-stats">
+            <!-- this is a right side about data  -->
+            <div class="section-About-data">
+                <p class="about-para">
+                    Web developer, with good knowledge
+                    and some year of experience, working
+                    in web technologies and delivering
+                    good work.
+                </p>
+
+                <div class="container Numbers-grid grid-three-column">
+                    <div class="numbers">
+                        <h2>05+</h2>
+                        <p>project</p>
+                        <p>completed</p>
+                    </div>
+                    <div class="numbers">
+                        <h2>0+</h2>
+                        <p>Companies</p>
+                        <p>Worked</p>
+                    </div>
+
+                    <div class="numbers">
+                        <h2>0+</h2>
+                        <p>Year</p>
+                        <p>experience</p>
+                    </div>
+
+                </div>
+                <div>
+                    <a download=" "
+                        href="https://drive.google.com/file/d/1AbD13kD8q0Qs4iRppbDwDl3cROfS5CWE/view?usp=sharing"
+                        class="btn hire-me" style="color: var(--white) ;" target="_blank">Download
+                        CV<ion-icon name="download-outline" class="contact-icon"></ion-icon></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- /* ======================================
+    This is a bio-data section
+=========================================*/ -->
+
+    <section id="my-bio-data" class="section-hero section">
+        <!-- this is head of bio-data-->
+        <div class="About">
+            <h2 class="all_h2">My Bio-Data</h2>
+            <p class="head-p">Technical Skill</p>
+        </div>
+        <div class="container grid grid-two-column">
+            <!--this is a left side img -->
+            <div class="section-hero-img">
+                <img src="images/bio-img.jpg" alt="this is Nitesh" class="bio-img" loading="lazy">
+            </div>
+
+            <!-- this is a right side bio data  -->
+            <div class="section-bio-data">
+                <p class="bio-para">
+                    I Can use these Technologies
+                </p>
+                <div class="progress">
+                    <div class="stats">
                         <h3>Design</h3>
-                        <div class="bio-progress-bar">
-                            <span>80%</span>
+                        <div class="progress-bar progress-1">
                         </div>
-                    </div>
-                    <div class="bio-stats">
-                        <h3>Html</h3>
-                        <div class="bio-progress-bar  bio-progress2">
-                            <span>80%</span>
-                        </div>
-                    </div>
-                    <div class="bio-stats">
-                        <h3>Css</h3>
-                        <div class="bio-progress-bar  bio-progress3">
-                            <span>80%</span>
-                        </div>
-                    </div>
-                    <div class="bio-stats">
-                        <h3>Javascript</h3>
-                        <div class="bio-progress-bar  bio-progress4">
-                            <span>80%</span>
-                        </div>
-                    </div>
-                    <div class="bio-stats">
-                        <h3>Mern</h3>
-                        <div class="bio-progress-bar  bio-progress5">
-                            <span>80%</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="bio-data-btn">
-                    <a href="#" class="btn">Download Cv</a>
-                </div>
-            </div>
-        </div>
+                        <span class="percent-80">80%</span>
+                        <div class="stats">
+                            <h3>HTML</h3>
+                            <div class="progress-bar progress-2">
 
+                            </div>
+                            <span class="percent-90">90%</span>
+                            <div class="stats">
+                                <h3>CSS</h3>
+                                <div class="progress-bar progress-3">
+
+                                </div>
+                                <span class="percent-80">80%</span>
+                                <div class="stats">
+                                    <h3>JAVASCRIPT</h3>
+                                    <div class="progress-bar progress-4">
+
+                                    </div>
+                                    <span class="percent-50">50%</span>
+                                    <div class="stats">
+                                        <h3>MERN</h3>
+                                        <div class="progress-bar progress-5">
+                                        </div>
+
+                                        <span class="percent-30">30%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
     </section>
 
 
-    <!-- =====================================
-    -------This is a our portfolio  section-----
-    ===================================== -->
 
-    <section section section-portfolio id="portfolio-section">
+    <!-- /* ======================================
+    This is a resume section
+=========================================*/ -->
 
-        <div class="container2">
-            <h2 class="common">Latest Works</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum rerum assumenda totam, at, dolorum libero
-                <br>
-                dolores ea omnis quisquam ut deleniti. Ducimus cum officiis incidunt soluta tenetur ab eaque deleniti.
-            </p>
+
+    <section id="my-resume" class="section-hero section">
+        <!-- this is head of resume-data-->
+        <div class="About">
+            <h2 class="all_h2">My Resume</h2>
+            <p class="head-p">Qualification</p>
         </div>
-
-        <div class="p-btns">
-            <div class="btn p-btn" data-btn-num="1">WEBSITE</div>
-            <div class="btn p-btn" data-btn-num="2">YOUTUBE</div>
-            <div class="btn p-btn" data-btn-num="3">DESIGN</div>
-        </div>
-
-        <div class="container grid  grid-three-column portfolio-images">
-            <div class="img-overlay p-btn-1">
-                <img src="images/fourth-img.jpg" alt="">
-
-                <div class="overlay">
-                    <a href="https://www.google.com" target="_blank" class="pro-heading">porject 1</a>
-
-                </div>
-
+        <div class="container grid grid-two-column">
+            <!--this is a left side img -->
+            <div class="section-hero-img">
+                <img src="images/resume-img.jpg" alt="this is Nitesh" class="bio-img" loading="lazy">
             </div>
-            <div class="img-overlay p-btn-2">
-                <img src="images/fourth-img.jpg" alt="">
 
-                <div class="overlay">
-                    <a href="https://www.google.com" target="_blank" class="pro-heading">porject 2</a>
-
+            <!-- this is a right side resume data  -->
+            <div class="section-resume-data">
+                <p class="resume-para">
+                    Education
+                </p>
+                <!-- this is a right side resume data  -->
+                <div class="resume-data">
+                    <div class="resume-grid grid-two-column">
+                        <h3 class="re-info">Bachelor in Computer Science</h3>
+                        <div class="left-info">
+                            <p>
+                                <ion-icon class="resume-icons" name="school-outline"></ion-icon>Ignou College
+                            </p>
+                            <p>
+                                <ion-icon class="resume-icons" name="location-outline"></ion-icon> Delhi
+                            </p>
+                        </div>
+                        <div class="right-info">
+                            <p>
+                                <ion-icon class="resume-icons" name="school-outline"></ion-icon>BACHELOR
+                            </p>
+                            <P>
+                                <ion-icon class="resume-icons" name="calendar-outline"></ion-icon>June 2020 - 2023
+                            </P>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="img-overlay p-btn-3">
-                <img src="images/fourth-img.jpg" alt="">
-
-                <div class="overlay">
-                    <a href="https://www.google.com" target="_blank" class="pro-heading">porject 3</a>
-
-                </div>
-
-            </div>
-            <div class="img-overlay p-btn-3">
-                <img src="images/fourth-img.jpg" alt="">
-
-                <div class="overlay">
-                    <a href="https://www.google.com" target="_blank" class="pro-heading">porject 4</a>
-
-                </div>
-
-            </div>
-            <div class="img-overlay p-btn-2">
-                <img src="images/fourth-img.jpg" alt="">
-
-                <div class="overlay">
-                    <a href="https://www.google.com" target="_blank" class="pro-heading">porject 5</a>
-
-                </div>
-
-            </div>
-            <div class="img-overlay p-btn-1">
-                <img src="images/fourth-img.jpg" alt="">
-
-                <div class="overlay">
-                    <a href="https://www.google.com" target="_blank" class="pro-heading">porject 6</a>
-
+                <div class="resume-data">
+                    <div class="resume-grid grid-two-column">
+                        <h3 class="re-info">Master in Computer Science</h3>
+                        <div class="left-info">
+                            <p>
+                                <ion-icon class="resume-icons" name="school-outline"></ion-icon>Ignou College
+                            </p>
+                            <p>
+                                <ion-icon class="resume-icons" name="location-outline"></ion-icon> Delhi
+                            </p>
+                        </div>
+                        <div class="right-info">
+                            <p>
+                                <ion-icon class="resume-icons" name="school-outline"></ion-icon>Master
+                            </p>
+                            <P>
+                                <ion-icon class="resume-icons" name="calendar-outline"></ion-icon>June 2023 - 2024
+                            </P>
+                        </div>
+                    </div>
                 </div>
 
             </div>
         </div>
-    </section>
-
-
-    <!-- =====================================
-    -------This is a our counter  section-----
-    ===================================== -->
-
-
-    <section class="section section-work-data">
-        <div class="container grid  grid-four-column ">
-            <div>
-                <h2 class="counter-numbers" data-number="2000">0+</h2>
-                <p>Project Complete</p>
-            </div>
-            <div>
-                <h2 class="counter-numbers" data-number="6000">0+</h2>
-                <p>Happy client</p>
-            </div>
-            <div>
-                <h2 class="counter-numbers" data-number="5000">0+</h2>
-                <p>Cups or Coffee</p>
-            </div>
-            <div>
-                <h2 class="counter-numbers" data-number="3000">0+</h2>
-                <p>Professionals</p>
-            </div>
+        </div>
         </div>
     </section>
 
 
 
-    <!-- =====================================
-    -------This is a our services  section-----
-    ===================================== -->
+    <!-- /* ======================================
+    This is a My-projects section
+=========================================*/ -->
+    <section id="my-projects" class="section">
+        <!-- this is head of My-Work-data-->
+        <div class="About">
+            <h2 class="all_h2">My Projects</h2>
+            <p class="head-p">Latest Work</p>
+        </div>
+        <div class="projects">
+            <div class="container projects-grid grid-three-column">
 
-    <section class="section section-services ">
+                <div class="pro-1">
+                    <h3>project-1</h3>
+                    <a href="https://niteshportfolio.netlify.app/" target="_blank">
+                        <img class="project-img" src="images/project-1.jpg" alt="project-1" loading="lazy">
+                    </a>
+                </div>
+                <div class="pro-1">
+                    <h3>project-2</h3>
+                    <a href="https://niteshscroll.netlify.app" target="_blank">
+                        <img class="project-img" src="images/project-2.jpg" alt="project-2" loading="lazy">
+                    </a>
+                </div>
+                <div class="pro-1">
+                    <h3>project-3</h3>
+                    <a href="https://www.google.com" target="_blank">
+                        <img class="project-img" src="images/project-2.jpg" alt="project-3" loading="lazy">
+                    </a>
+                </div>
+                <div class="pro-1">
+                    <h3>project-3</h3>
+                    <a href="https://www.google.com" target="_blank">
+                        <img class="project-img" src="images/project-2.jpg" alt="project-4" loading="lazy">
+                    </a>
+                </div>
+                <div class="pro-1">
+                    <h3>project-3</h3>
+                    <a href="https://www.google.com" target="_blank">
+                        <img class="project-img" src="images/project-2.jpg" alt="project-5" loading="lazy">
+                    </a>
+                </div>
+                <div class="pro-1">
+                    <h3>project-3</h3>
+                    <a href="https://www.google.com" target="_blank">
+                        <img class="project-img" src="images/project-2.jpg" alt="project-6" loading="lazy">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- /* ======================================
+    This is a services section
+=========================================*/ -->
+    <section class="section-hero section">
+        <!-- this is head of My-Work-data-->
+        <div class="About">
+            <h2 class="all_h2">My Services</h2>
+            <p class="head-p">What I Deliver</p>
+        </div>
+        <div class="projects">
+            <div class="services-grid grid-three-column">
+
+                <div class="service-1">
+                    <div class="icon">
+                        <ion-icon class="resume-icon" name="code-outline"></ion-icon>
+                    </div>
+                    <h3>Web Developer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quas dignissimos quos
+                    </p>
+                </div>
+                <div class="service-1">
+                    <div class="icon">
+                        <ion-icon class="resume-icon" name="albums-outline"></ion-icon>
+                    </div>
+                    <h3>Ui/Ux <br> Designer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quas dignissimos quos
+                    </p>
+                </div>
+                <div class="service-1">
+                    <div class="icon">
+
+                        </ion-icon>
+                        <ion-icon class="resume-icon" name="pencil-sharp"></ion-icon>
+                    </div>
+                    <h3>Graphic Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quas dignissimos quos
+                    </p>
+                </div>
+                <div class="service-1">
+                    <div class="icon">
+
+                        </ion-icon>
+                        <ion-icon class="resume-icon" name="pencil-sharp"></ion-icon>
+                    </div>
+                    <h3>Graphic Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quas dignissimos quos
+                    </p>
+                </div>
+                <div class="service-1">
+                    <div class="icon">
+
+                        </ion-icon>
+                        <ion-icon class="resume-icon" name="pencil-sharp"></ion-icon>
+                    </div>
+                    <h3>Graphic Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quas dignissimos quos
+                    </p>
+                </div>
+                <div class="service-1">
+                    <div class="icon">
+
+                        </ion-icon>
+                        <ion-icon class="resume-icon" name="pencil-sharp"></ion-icon>
+                    </div>
+                    <h3>Graphic Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quas dignissimos quos
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- /* ======================================
+    This is a free-lancing section
+=========================================*/ -->
+    <section class="section section-freelancing">
+        <div class="overlay"></div>
         <div class="container">
-            <h2 class="common-heading">Services</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur necessitatibus nostrum ab eum error.
-                Dolores sequi accusantium esse vel minima mollitia quibusdam unde impedit fugit deleniti dignissimos
-                excepturi, earum iure.</p>
+            <h2>I am <span>available</span> for freelancing</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla delectus, molestias laboriosam
+                corrupti accusamus omnis a architecto alias, ex at quisquam eius recusandae rem aliquid libero nam
+                quam culpa facilis!</p>
         </div>
-
-        <!-- sevices offers card----->
-
-        <div class="container grid  grid-three-column ">
-
-            <div class="service-box">
-                <ion-icon name="desktop-outline" class="service-icon"></ion-icon>
-                <h3>Web Design</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos mollitia ea tenetur beatae quas dolores
-                    in corpori</p>
-            </div>
-            <div class="service-box">
-                <ion-icon name="code-sharp" class="service-icon"></ion-icon>
-                <h3>Web Devloper</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos mollitia ea tenetur beatae quas dolores
-                    in corpori</p>
-            </div>
-            <div class="service-box">
-                <ion-icon name="image-sharp" class="service-icon"></ion-icon>
-                <h3>Photography</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos mollitia ea tenetur beatae quas dolores
-                    in corpori</p>
-            </div>
-            <div class="service-box">
-                <ion-icon name="clipboard-outline" class="service-icon"></ion-icon>
-                <h3>Web Ui/Ux</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos mollitia ea tenetur beatae quas dolores
-                    in corpori</p>
-            </div>
-            <div class="service-box">
-                <ion-icon name="laptop-outline" class="service-icon"></ion-icon>
-                <h3>App Devloper</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos mollitia ea tenetur beatae quas dolores
-                    in corpori</p>
-            </div>
-            <div class="service-box">
-                <ion-icon name="bug-outline" class="service-icon"></ion-icon>
-                <h3>Graphic Design</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos mollitia ea tenetur beatae quas dolores
-                    in corpori</p>
-            </div>
-        </div>
-
+        <a href="#" class="btn hire-me free-btn" style="color: var(--white) ;">Hire Me</a>
     </section>
 
-    <!-- =====================================
-    -------This is a our image scroll bar section-----
-    ===================================== -->
-    <section class="section section-services ">
-        <div class=" container3 grid-three-column">
 
+    <!-- /* ======================================
+    This is a happy-client section
+=========================================*/ -->
+
+    <section class="section-hero section">
+        <!-- this is head of resume-data-->
+        <div class="About">
+            <h2 class="all_h2">Happy-Clients</h2>
+            <p class="head-p">Response</p>
+        </div>
+        <div class="container-happy">
+            <!-- Swiper -->
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="images/first-img.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="images/third-img.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="images/fifth-img.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="images/fifth2-img.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="images/sixth-img.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="images/eight-img.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="images/thenth-img.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="images/fifth-img.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="images/fifth2-img.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/project-2.jpg" alt="happy-client" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="images/project-2.jpg" alt="happy-client" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="images/project-2.jpg" alt="happy-client" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="images/project-2.jpg" alt="happy-client" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="images/project-2.jpg" alt="happy-client" loading="lazy"></div>
+                    <div class="swiper-slide"><img src="images/project-2.jpg" alt="happy-client" loading="lazy"></div>
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
         </div>
     </section>
 
+    <!-- /* ======================================
+    This is a footer section
+=========================================*/ -->
+    <footer id="Query" class="main-footer">
+        <section class="section footer-section">
+            <div class="footer-grid grid-three-column">
 
-    <!-- =====================================
-    -------This is a our freelancing section-----
-    ===================================== -->
-
-    <section class="section section-freelancing ">
-        <div class="overlay">
-            <div class="container">
-                <h2>I am <span style="color: rgb(255, 251, 0) ;">available</span>for freelancing/h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, minus. Magnam odit non iure,
-                        nesciunt at omnis </p>
-                    <a href="contact.html" class="btn">hire me</a>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- =====================================
-    -------This is a our freelancing section-----
-    ===================================== -->
-
-    <section class="section section-contact ">
-
-        <div class="container">
-            <h2 class="common-heading">Contact Us</h2>
-
-        </div>
-
-        <div class="section-contact-main  contact-container">
-            <form action="https://formspree.io/f/mnqrjkkr" method="POST">
-                <div class="grid grid-tow-column">
-                    <div>
-                        <label for="username"></label>
-                        <input type="text" name="username" required minlength="3" maxlength="8" id="username"
-                            placeholder="username ">
-                    </div>
-
-                    <div>
-                        <label for="email"></label>
-                        <input type="email" name="email" required placeholder="email">
-                    </div>
+                <div class="footer-mini-section">
+                    <h2>Nitesh</h2>
+                    <ion-icon class="first-icons" name="arrow-redo-outline"></ion-icon>
+                    <p>Full Stack Developer</p>
                 </div>
-                <div>
-                    <label for="subject"></label>
-                    <input type="subject" name="subject" required placeholder="subject" id="subject" minlength="2" >
+                <div class="footer-mini-section">
+                    <h2>Links</h2>
+                    <ion-icon class="first-icons" name="arrow-redo-outline"></ion-icon>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis blanditiis</p>
                 </div>
-                <div>
-                    <label for="textarea"></label>
-                    <textarea name="textarea" id="textarea" autocomplete="off" required placeholder="Enter your query"
-                        cols="30" rows="10"></textarea>
-                </div>
-
-                <div>
-                    <input type="submit" name="submit" autocomplete="off" required value="submit here" id="submit"
-                        class="btn">
-                </div>
-
-        </div>
-        </form>
-        </div>
-
-
-    </section>
-
-    <!-- =====================================
-    -------This is a our footer section-----
-    ===================================== -->
-
-    <footer class="section-footer">
-        <div class="container grid grid-four-column">
-            <div class="f-about">
-                <h3 f-h3>About</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sint debitis, expedita quis
-                    qui nemo beatae veritatis numquam amet ullam sit magnam eum it?</p>
-            </div>
-            <!-- <---end--->
-            <div class="f-links">
-                <h3>links</h3>
-                <ul>
-                    <li>
-                        <span>
-                            <ion-icon name="arrow-forward-outline"></ion-icon>
-                        </span></ion-icon><a href="#">Home</a>
-                    </li>
-                    <li>
-                        <span>
-                            <ion-icon name="arrow-forward-outline"></ion-icon>
-                        </span></ion-icon><a href="#">About</a>
-                    </li>
-                    <li>
-                        <span>
-                            <ion-icon name="arrow-forward-outline"></ion-icon>
-                        </span></ion-icon><a href="#">Service</a>
-                    </li>
-                    <li>
-                        <span>
-                            <ion-icon name="arrow-forward-outline"></ion-icon>
-                        </span></ion-icon><a href="#">Portfolio</a>
-                    </li>
-                    <li>
-                        <span>
-                            <ion-icon name="arrow-forward-outline"></ion-icon>
-                        </span></ion-icon><a href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="f-sevices">
-                <h3>Services</h3>
-                <ul>
-                    <li>
-                        <span>
-                            <ion-icon name="arrow-forward-outline"></ion-icon>
-                        </span></ion-icon><a href="#">Home</a>
-                    </li>
-                    <li>
-                        <span>
-                            <ion-icon name="arrow-forward-outline"></ion-icon>
-                        </span></ion-icon><a href="#">About</a>
-                    </li>
-                    <li>
-                        <span>
-                            <ion-icon name="arrow-forward-outline"></ion-icon>
-                        </span></ion-icon><a href="#">Service</a>
-                    </li>
-                    <li>
-                        <span>
-                            <ion-icon name="arrow-forward-outline"></ion-icon>
-                        </span></ion-icon><a href="#">Portfolio</a>
-                    </li>
-                    <li>
-                        <span>
-                            <ion-icon name="arrow-forward-outline"></ion-icon>
-                        </span></ion-icon><a href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="f-address">
-                <h3>Have a Qurestion</h3>
-                <address>
-                    <div>
-                        <span>
+                <address class="footer-address">
+                    <h2>Have any Questions</h2>
+                    <div class="footer-icons">
+                        <a href="/html_files/loaction.html" class="icons-footer" target="_blank"><span>Delhi ,
+                                india</span>
                             <ion-icon name="location-outline"></ion-icon>
-                        </span> <a href="#">Delhi , India</a>
-                    </div>
-                    <div>
-                        <span>
+                        </a>
+                        <a href="tel:+91 8076197001" class="icons-footer" target="_blank"><span>+91
+                                8076197001</span>
                             <ion-icon name="call-outline"></ion-icon>
-                        </span> <a href="tel:9187654321">+91 80761000</a>
-                    </div>
-                    <div>
-                        <span>
-                            <ion-icon name="mail-outline"></ion-icon>
-                        </span> <a href="mailto:nitesh@.com">nitesh@gmail.com</a>
+                        </a>
+                        <a href="mailto:nitesh8825kr@gmail.com" target="_blank"><span>nitesh8825kr@gmail.com</span>
+                            <ion-icon type name="mail-unread-outline"></ion-icon>
+                        </a>
+
+
                     </div>
                 </address>
             </div>
-        </div>
-
-        <div class="container">
-            <div class="socail-icons">
-                <a href="#">
-                    <ion-icon class="icons" name="logo-instagram"></ion-icon>
-
-                </a>
-                <a href="#">
-                    <ion-icon class="icons" name="logo-discord"></ion-icon>
-
-                </a>
-                <a href="#">
-                    <ion-icon class="icons" name="logo-youtube"></ion-icon>
-
-                </a>
+            <div class="footer-bottom-icons">
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-discord"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
             </div>
-        </div>
-
-        <div class="f-credits">
-            <p>Copyright ©2022 All rights reserved | This template is made by with 🤍 by thapa technical</p>
-        </div>
+            <h2>Copyright ©2022 All rights reserved</h2>
+        </section>
     </footer>
 
+    <!-- /* ======================================
+    This is a scroll-top button
+=========================================*/ -->
 
-
-    <!-- =====================================
-    -------This is a our topup button section-----
-    ===================================== -->
-
-
-    <div class="scrollTop-style">
-        <ion-icon name="arrow-up-outline" class="scroll-top"></ion-icon>
+    <div class="scroll-btn">
+        <ion-icon class="scroll-icon" name="arrow-up-outline"></ion-icon>
     </div>
-
-
-
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
 </body>
 

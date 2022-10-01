@@ -1,91 +1,76 @@
-console.log("hello nitesh")
+/* ======================================
+    This is a header section
+=========================================*/
 
-/* 
-=====================================
--------This is a portfolio section-----
-===================================== */
+window.addEventListener("scroll", function () {
+    let header = document.querySelector("header");
+    let h_logo = document.querySelector(".h-logo");
+    console.log(h_logo)
+    header.classList.toggle("sticky", window.scrollY > 850);
+    h_logo.classList.toggle("sticky", window.scrollY > 850);
 
-const p_btns = document.querySelector('.p-btns');
-const p_btn = document.querySelectorAll('.btn');
-const p_img_elem = document.querySelectorAll('.img-overlay')
-
-
-p_btns.addEventListener('click', (e) => {
-
-    const p_btn_clicked = e.target;
-
-    // console.log(p_btn_clicked)
-
-    p_btn.forEach((cumElem) => {
-        cumElem.classList.remove("p-btn-active")
-
-        p_btn_clicked.classList.add("p-btn-active")
-    })
+});
 
 
+/* ======================================
+This is a header mobile navbar part
+=========================================*/
 
+let mob_header = document.querySelector(".header")
+let mobile_nav = document.querySelector(".mobile-nav")
 
-
-})
-
-
-// swiper image slider
-
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
-    spaceBetween: 50,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    autoplay: {
-        delay: 1500,
-    }
+mobile_nav.addEventListener("click", () => {
+    mob_header.classList.toggle("active")
 });
 
 
 
-// scroll to top button
 
-// let footerEle = document.querySelectorAll(".section-footer");
-// let scrollElement = document.createElement("div");
-
-
-
-// scrollElement.classList.add("scrollTop-style");
-
-// scrollElement.innerHTML = ` <ion-icon name="arrow-up-outline" class="scroll-top"></ion-icon>`;
-
-// footerEle.after=("scrollElement");
-
-let herosection = document.querySelector(".header");
-
-let scrollElement = document.querySelector(".scroll-top");
-
-let scrollTop = () => {
-    herosection.scrollIntoView({ behavior:"smooth"})
-}
-scrollElement.addEventListener('click', scrollTop);
+/* ======================================
+This is a header animation word part
+=========================================*/
 
 
-// number counter
-
-// const counterNum = document.querySelector(".counter-numbers")
-// const speed = 200;
-
-// counterNum.forEach((cumElem)=>{
-//     console.log(counterNum)
-// })
+// this is a typing animation -----------
+let typed = new Typed('.hero', {
+    strings: ["Web Developer.", "Web Designer.", "And Now I'm still.", "Exploring And.", "Learning A.", " New Things (: "],
+    typeSpeed: 30,
+    loop: true
+});
 
 
-/* 
-=====================================
--------This is a ham bargar section-----
-===================================== */
 
-const mobile_nav = document.querySelector(".mobile-navbar-btn");
-const headerElem = document.querySelector(".header");
+/* ======================================
+This is a happy-clients section
+=========================================*/
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 2,
+    spaceBetween: 50,
+    autoplay: {
+        delay: 1500
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});
 
-mobile_nav.addEventListener('click', () => {
-    headerElem.classList.toggle('active')
-})
+
+
+
+
+
+
+/* ======================================
+This is a scroll-btn
+=========================================*/
+
+const TopUp = document.querySelector("#Home");
+const scroll_icon = document.querySelector(".scroll-icon");
+
+
+scroll_icon.addEventListener('click', function () {
+
+    TopUp.scrollIntoView({ behavior: "smooth" })
+
+});
