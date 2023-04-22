@@ -43,5 +43,7 @@ else {
 const loading_page = document.getElementById("loading-page");
 
 window.onload = () => {
-  loading_page.style.display = "none";
+  setTimeout(() => {
+    loading_page.style.display = "none";
+  }, 2000);
 };
